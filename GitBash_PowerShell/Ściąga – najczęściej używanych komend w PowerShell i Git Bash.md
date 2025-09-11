@@ -60,19 +60,26 @@ git init
 git add .
 git commit -m "Pierwszy commit"
 ```
-zmiana nazwy głównej gałęzi z master na main
+Zmienia nazwy głównej gałęzi z master na main:
 ```shell
 git branch -m master main
 ```
-Połącz lokalne repozytorium z GitHubem
+Łączy lokalne repozytorium z GitHubem:
 ```shell
 git remote add origin https://github.com/GP-data-engineer/Doc_Vault.git
+```
+Ustawia powiązanie lokalnej gałęzi `main` z gałęzią `main` na GitHubie:
+```shell
+git push --set-upstream origin main
+```
+Pobiera zmiany z GitHuba i połącz z lokalnymi:
+```shell
+git pull origin main --allow-unrelated-histories
 ```
 
 ```shell
 cd C:\GitHub\Repo
 git clone https://github.com/uzytkownik/nazwa-repo.git Doc_Vault
-
 ```
 ---
 ### Prompt dla Problemu
