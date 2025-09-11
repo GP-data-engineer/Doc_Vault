@@ -1,0 +1,25 @@
+/* Ogólne tło i kolor tekstu w podglądzie oraz przy druku 
+.markdown-preview-view,
+.print {
+    background-color: #000 !important;    czarne tło 
+   color: #fff !important;               domyślny biały tekst 
+}*/
+
+/* Klasa dla dowolnie kolorowanego tekstu */
+.colored-text {
+    color: var(--custom-color) !important;
+}
+
+/* Przykładowe definicje konkretnych kolorów */
+.red   { --custom-color: #ff5555; }
+.green { --custom-color: #55ff55; }
+.blue  { --custom-color: #5599ff; }
+
+/* Upewnij się, że kolory działają także w trybie drukowania */
+@media print {
+    .markdown-preview-view,
+    .print {
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+}

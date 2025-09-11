@@ -8,7 +8,7 @@ git status
 ```
 ```shell
 git add .
-git commit -m "mofification first Doc_Vault"
+git commit -m "Modified first Doc_Vault"
 git push
 ```
 ```shell
@@ -25,8 +25,7 @@ pytest .\tests\Chapter03\test_problem_3_3.py  #uruchamia test wybranego pliku
 ```
 
 
-
-<span class="green">
+<span class="yelow">
 
 .red tests\Chapter03\test_exercise_3_2_6.py F                                                       [ 82%]
 tests\Chapter03\test_problem_3_1.py ......                                                     [ 87%]
@@ -34,6 +33,7 @@ tests\Chapter03\test_problem_3_2.py FFF...F                                     
 tests\Chapter03\test_problem_3_3.py F.F                                                        [ 94%]
 
 </span>
+
 
 ```shell
 git config --global user.name "Grzegorz Pieniak"
@@ -60,7 +60,7 @@ git init
 git add .
 git commit -m "Pierwszy commit"
 ```
-Zmienia nazwy głównej gałęzi z master na main:
+Zmienia nazwy głównej gałęzi z master w `main`:
 ```shell
 git branch -m master main
 ```
@@ -72,7 +72,7 @@ Ustawia powiązanie lokalnej gałęzi `main` z gałęzią `main` na GitHubie:
 ```shell
 git push --set-upstream origin main
 ```
-Pobiera zmiany z GitHuba i połącz z lokalnymi:
+**Pobiera zmiany z GitHuba i połącz z lokalnymi:**
 ```shell
 git pull origin main --allow-unrelated-histories
 ```
