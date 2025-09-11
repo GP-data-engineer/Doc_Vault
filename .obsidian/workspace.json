@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "388a9044af70205e",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d79abc2a9ddb4bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1279109cf2581d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Witaj.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Witaj"
+            }
+          },
+          {
+            "id": "627ef8371cd95e31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ściąga – najczęściej używanych komend w PowerShell i Git Bash"
+            }
+          },
+          {
+            "id": "61c491b189e4802e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ściąga – najczęściej używanych komend w PowerShell i Git Bash"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "daa69f1f03d6cf29",
+    "type": "split",
+    "children": [
+      {
+        "id": "e10ae597b40061bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee48d01b145f42d3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Przeglądarka plików"
+            }
+          },
+          {
+            "id": "8e31ffb116d11679",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Szukaj"
+            }
+          },
+          {
+            "id": "e5c856df4fc2173d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Ulubione"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5f872fe8410219d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4197a3f4771c542",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82124c2423103dec",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Linki zwrotne do Ściąga – najczęściej używanych komend w PowerShell i Git Bash"
+            }
+          },
+          {
+            "id": "7763d755371beed9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Łącza wychodzące z Ściąga – najczęściej używanych komend w PowerShell i Git Bash"
+            }
+          },
+          {
+            "id": "d581393762181945",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tagi"
+            }
+          },
+          {
+            "id": "adf56b90a313f23b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Konspekt Ściąga – najczęściej używanych komend w PowerShell i Git Bash"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Otwórz okno szybkiego wyboru": false,
+      "graph:Otwórz graf": false,
+      "canvas:Stwórz nową tablicę": false,
+      "daily-notes:Otwórz codzienną notatkę": false,
+      "templates:Wstaw szablon": false,
+      "command-palette:Otwórz listę poleceń": false,
+      "bases:Stwórz nową bazę danych": false
+    }
+  },
+  "active": "61c491b189e4802e",
+  "lastOpenFiles": [
+    "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
+    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+    "Witaj.md",
+    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash",
+    "GitBash_PowerShell"
+  ]
+}
