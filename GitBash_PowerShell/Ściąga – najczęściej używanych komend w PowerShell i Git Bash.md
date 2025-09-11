@@ -60,6 +60,14 @@ git init
 git add .
 git commit -m "Pierwszy commit"
 ```
+zmiana nazwy głównej gałęzi z master na main
+```shell
+git branch -m master main
+```
+Połącz lokalne repozytorium z GitHubem
+```shell
+git remote add origin https://github.com/GP-data-engineer/Doc_Vault.git
+```
 
 ```shell
 cd C:\GitHub\Repo
