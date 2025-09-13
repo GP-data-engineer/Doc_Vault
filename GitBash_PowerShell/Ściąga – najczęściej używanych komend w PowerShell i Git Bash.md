@@ -26,7 +26,7 @@ python -m pytest #uruchamia wszystkie test w Repo
 ```
 
 ```shell
-pytest .\tests\Chapter03\test_exercise_3_2_8.py  #uruchamia test wybranego pliku 
+pytest .\tests\Chapter04\test_exercise_4_1_1.py  #uruchamia test wybranego pliku 
 ```
 
 
