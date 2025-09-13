@@ -1,19 +1,24 @@
 
 **Najczęściej używane sekwencje:**
 ```shell
-New_Item_ExerciseOrTest.ps1 -Chapter 03 -Name 3_2_7
+New_Item_ExerciseOrTest.ps1 -Chapter 03 -Name 3_2_8
 ```
 ```shell
 git status
 ```
 ```shell
 git add .
-git commit -m "Modified first Doc_Vault"
+git commit -m "Modified Doc_Vault"
 git push
 ```
 ```shell
 git add .
-git commit -m "Added GitHub_Terminal_Commands_0.txt | GitHub_Terminal_Commands_1.txt | src/Run_All_Tests_Separately.ps1 | src/test_logs/"
+git commit -m "Added test_exercise_3_2_8.py & test_exercise_3_2_8.py"
+git push
+```
+```shell
+git add .
+git commit -m "Modified test_exercise_3_2_8.py & test_exercise_3_2_8.py"
 git push
 ```
 ```shell
@@ -21,7 +26,7 @@ python -m pytest #uruchamia wszystkie test w Repo
 ```
 
 ```shell
-pytest .\tests\Chapter03\test_problem_3_3.py  #uruchamia test wybranego pliku 
+pytest .\tests\Chapter03\test_exercise_3_2_8.py  #uruchamia test wybranego pliku 
 ```
 
 
@@ -84,11 +89,11 @@ git clone https://github.com/uzytkownik/nazwa-repo.git Doc_Vault
 ---
 ### Prompt dla Problemu
 ```
-przygotuj kod dla zadania Problem_3_3.py oraz przygotuj kod do test_problem_3_3.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Problemu Problem_3_3.py dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu.
+przygotuj kod dla zadania Problem_3_3.py oraz przygotuj kod do test_problem_3_3.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Problemu Problem_3_3.py dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter03. następnie nazwę zadania problemu oraz import odpowiednich testów.
 ```
 ### Prompt dla Zadania
 ```
-przygotuj kod do zadania Exercise_3_2_8.py oraz przygotuj kod do test_exercise_3_2_8.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Zadania Exercise_3_2_8.py dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu.
+przygotuj kod do zadania Exercise_3_2_8.py oraz przygotuj kod do test_exercise_3_2_8.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Zadania Exercise_3_2_8.py dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter03. następnie nazwę zadania oraz import odpowiednich testów.
 ```
 ---
 
