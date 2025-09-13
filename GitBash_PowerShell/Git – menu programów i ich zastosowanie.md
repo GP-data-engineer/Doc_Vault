@@ -2,7 +2,7 @@
 
 Git – menu programów i ich zastosowanie
 ## Który program wybrać, żeby pisać komendy w Git Bash?
-➡ **Wybierz „Git Bash”**  
+**Wybierz „Git Bash”**  
 To terminal emulujący powłokę **Bash** (taką jak w Linux/Unix), działający w Windows.  
 - Obsługuje standardowe komendy linuksowe (`ls`, `cd`, `grep`, `cat`, `nano` itd.).
 - W pełni obsługuje komendy Gita (`git clone`, `git commit`, `git push` itd.).
@@ -10,7 +10,7 @@ To terminal emulujący powłokę **Bash** (taką jak w Linux/Unix), działający
 
 ---
 
-## 📋 Co oznaczają pozostałe opcje w menu Git
+## Co oznaczają pozostałe opcje w menu Git
 
 | Program | Do czego służy |
 |---------|----------------|
@@ -22,7 +22,7 @@ To terminal emulujący powłokę **Bash** (taką jak w Linux/Unix), działający
 
 ---
 
-# 📚 Mini ściąga – 20 najczęściej używanych komend w Git Bash
+#  Mini ściąga – 20 najczęściej używanych komend w Git Bash
 
 | #   | Komenda                   | Opis                                                                |
 | --- | ------------------------- | ------------------------------------------------------------------- |
@@ -49,7 +49,7 @@ To terminal emulujący powłokę **Bash** (taką jak w Linux/Unix), działający
 
 ---
 
-💡 **Wskazówka:**  
+**Wskazówka:**  
 Jeżeli dopiero zaczynasz, najczęściej będziesz używać sekwencji:
 ```bash
 git status

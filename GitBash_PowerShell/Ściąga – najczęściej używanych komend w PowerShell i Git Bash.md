@@ -84,11 +84,11 @@ git clone https://github.com/uzytkownik/nazwa-repo.git Doc_Vault
 ---
 ### Prompt dla Problemu
 ```
-przygotuj kod dla zadania Problem_3_3.py oraz przygotuj kod do test_problem_3_3.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Problemu dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu.
+przygotuj kod dla zadania Problem_3_3.py oraz przygotuj kod do test_problem_3_3.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Problemu Problem_3_3.py dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu.
 ```
 ### Prompt dla Zadania
 ```
-przygotuj kod do zadania Exercise_3_1_9.py oraz przygotuj kod do test_exercise_3_1_9.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Zadania dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu.
+przygotuj kod do zadania Exercise_3_2_8.py oraz przygotuj kod do test_exercise_3_2_8.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Zadania Exercise_3_2_8.py dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu.
 ```
 ---
 
