@@ -65,5 +65,3 @@
 - **Potrzebujesz szczegółowego raportu** oceny ryzyka dla konkretnego projektu? Mogę pomóc opracować strukturę dokumentu i wskazać, które informacje należy zebrać.  
 - **Chcesz uzyskać dostęp do pełnych treści norm**? Skorzystaj z platformy **Polskiego Komitetu Normalizacyjnego** (PN‑EN) lub zakup je bezpośrednio na stronie **ISO**.  
 - **Masz pytania o interpretację konkretnych zapisów** dyrektywy lub norm? Podaj fragment, a wyjaśnię jego praktyczne znaczenie w kontekście Twojej maszyny.
-
-**Jak mogę Ci jeszcze pomóc w tym temacie?**

@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 523.5
   },
   "right": {
     "id": "5f872fe8410219d7",
@@ -171,12 +171,12 @@
   },
   "active": "9835eef9bbfb5be4",
   "lastOpenFiles": [
+    "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
+    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
-    "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
-    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
     "README.md",
     "Bez nazwy.canvas",
     "2025-09-12.md",
