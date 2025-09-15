@@ -17,12 +17,12 @@ git push
 ```
 ```shell
 git add .
-git commit -m "Added test_exercise_4_2_2.py & test_exercise_4_2_2.py"
+git commit -m "Added test_exercise_4_2_3.py & test_exercise_4_2_3.py"
 git push
 ```
 ```shell
 git add .
-git commit -m "Modified test_exercise_4_2_2.py & test_exercise_4_2_2.py"
+git commit -m "Modified test_exercise_4_2_3.py & test_exercise_4_2_3.py"
 git push
 ```
 ```shell
@@ -30,7 +30,7 @@ python -m pytest #uruchamia wszystkie test w Repo
 ```
 
 ```shell
-pytest .\tests\Chapter04\test_exercise_4_2_1.py  #uruchamia test wybranego pliku 
+pytest .\tests\Chapter04\test_exercise_4_2_2.py  #uruchamia test wybranego pliku 
 ```
 
 
