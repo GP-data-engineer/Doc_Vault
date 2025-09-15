@@ -17,12 +17,12 @@ git push
 ```
 ```shell
 git add .
-git commit -m "Added test_exercise_4_1_5.py & test_exercise_4_1_5.py"
+git commit -m "Added test_exercise_4_2_1.py & test_exercise_4_2_1.py"
 git push
 ```
 ```shell
 git add .
-git commit -m "Modified test_exercise_4_1_5.py & test_exercise_4_1_5.py"
+git commit -m "Modified test_exercise_4_2_1.py & test_exercise_4_2_1.py"
 git push
 ```
 ```shell
