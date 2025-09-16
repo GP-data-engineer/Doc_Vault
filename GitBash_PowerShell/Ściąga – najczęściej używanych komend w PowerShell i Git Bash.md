@@ -21,12 +21,12 @@ git push
 ```
 ```shell
 git add .
-git commit -m "Added test_exercise_4_2_6.py & test_exercise_4_2_6.py"
+git commit -m "Added test_exercise_4_2_7.py & test_exercise_4_2_7.py"
 git push
 ```
 ```shell
 git add .
-git commit -m "Modified test_exercise_4_2_6.py & test_exercise_4_2_6.py"
+git commit -m "Modified test_exercise_4_2_7.py & test_exercise_4_2_7.py"
 git push
 ```
 ```shell
