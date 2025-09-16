@@ -5,7 +5,11 @@ cd C:\
 cd GitHub\Repo\Doc_Vault
 ```
 ```shell
-New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_2_6
+cd C:\
+cd C:\GitHub\Repo\Introduction-to-Algorithms-clrs-exercises
+```
+```shell
+New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_2_7
 ```
 ```shell
 git status
@@ -97,7 +101,7 @@ przygotuj kod dla zadania Problem_3_3.py oraz przygotuj kod do test_problem_3_3.
 ```
 ### Prompt dla Zadania
 ```
-przygotuj kod do zadania Exercise_3_2_8.py oraz przygotuj kod do test_exercise_3_2_8.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Zadania Exercise_3_2_8.py dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter03. następnie nazwę zadania oraz import odpowiednich testów.
+przygotuj kod do zadania Exercise_4_2_7.py oraz przygotuj kod do test_exercise_4_2_7.py, komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj komentarze po angielsku, twoj opis kodu po Polsku, bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodu Zadania Exercise_4_2_7.py dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter04. następnie nazwę zadania oraz import odpowiednich testów.
 ```
 ### Prompt dla kilku Zadań
 ```
