@@ -36,15 +36,16 @@ python -m pytest #uruchamia wszystkie test w Repo
 ```shell
 pytest .\tests\Chapter04\test_exercise_4_2_7.py  #uruchamia test wybranego pliku 
 ```
+```
+https://github.com/GP-data-engineer?tab=repositories
+```
 
 
 <span class="yelow">
-
 .red tests\Chapter03\test_exercise_3_2_6.py F                                                       [ 82%]
 tests\Chapter03\test_problem_3_1.py ......                                                     [ 87%]
 tests\Chapter03\test_problem_3_2.py FFF...F                                                    [ 92%]
 tests\Chapter03\test_problem_3_3.py F.F                                                        [ 94%]
-
 </span>
 
 
