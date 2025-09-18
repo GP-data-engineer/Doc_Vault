@@ -3,13 +3,16 @@
 ```shell
 cd C:\
 cd GitHub\Repo\Doc_Vault
+
 ```
 ```shell
 cd C:\
 cd C:\GitHub\Repo\Introduction-to-Algorithms-clrs-exercises
+
 ```
 ```shell
-New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_2_7
+New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_3_9
+
 ```
 ```shell
 git status
@@ -21,20 +24,23 @@ git push
 ```
 ```shell
 git add .
-git commit -m "Added test_exercise_4_2_7.py & test_exercise_4_2_7.py"
+git commit -m "Added test_exercise_4_3_x.py & test_exercise_4_3_x.py"
 git push
+
 ```
 ```shell
 git add .
-git commit -m "Modified test_exercise_4_2_7.py & test_exercise_4_2_7.py"
+git commit -m "Modified test_exercise_4_3_x.py & test_exercise_4_3_x.py"
 git push
+
 ```
 ```shell
 python -m pytest #uruchamia wszystkie test w Repo
+
 ```
 
 ```shell
-pytest .\tests\Chapter04\test_exercise_4_2_7.py  #uruchamia test wybranego pliku 
+pytest .\tests\Chapter04\test_exercise_4_3_1.py  #uruchamia test wybranego pliku 
 ```
 ```
 https://github.com/GP-data-engineer?tab=repositories
@@ -52,19 +58,23 @@ tests\Chapter03\test_problem_3_3.py F.F                                         
 ```shell
 git config --global user.name "Grzegorz Pieniak"
 git config --global user.email "gp79@tutamail.com"
+
 ```
 
 ```shell
 # Utwórz pusty plik .ps1
 New-Item -Path "Run_All_Tests_Separately.ps1" -ItemType File -Force
+
 ```
 
 ```shell
 New-Item -Path "Run_chapter03_tests.ps1" -ItemType File -Force
+
 ```
 
 ```shell
 mklink /D "C:\Vault\Scripts" "C:\GitHub\Repo\Scripts"
+
 ```
 
 Jeśli chcemy, aby lokalnie utworzony folder `Doc_Vault` był dołączony repozytorium:
@@ -73,10 +83,12 @@ cd C:\GitHub\Repo\Doc_Vault
 git init
 git add .
 git commit -m "Pierwszy commit"
+
 ```
 Zmienia nazwy głównej gałęzi z master w `main`:
 ```shell
 git branch -m master main
+
 ```
 Łączy lokalne repozytorium z GitHubem:
 ```shell
@@ -85,15 +97,18 @@ git remote add origin https://github.com/GP-data-engineer/Doc_Vault.git
 Ustawia powiązanie lokalnej gałęzi `main` z gałęzią `main` na GitHubie:
 ```shell
 git push --set-upstream origin main
+
 ```
 **Pobiera zmiany z GitHuba i połącz z lokalnymi:**
 ```shell
 git pull origin main --allow-unrelated-histories
+
 ```
 
 ```shell
 cd C:\GitHub\Repo
 git clone https://github.com/uzytkownik/nazwa-repo.git Doc_Vault
+
 ```
 ---
 ### Prompt dla Problemu
