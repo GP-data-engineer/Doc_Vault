@@ -11,7 +11,7 @@ cd C:\GitHub\Repo\Introduction-to-Algorithms-clrs-exercises
 
 ```
 ```shell
-New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_3_9
+New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_4_1
 
 ```
 ```shell
@@ -122,8 +122,7 @@ przygotuj kod do zadania Exercise_4_2_7.py oraz przygotuj kod do test_exercise_4
 ```
 ### Prompt dla kilku Zadań
 ```
-przygotuj kody do zadań Exercise_4_1_1.py, Exercise_4_1_2.py, Exercise_4_1_3.py oraz przygotuj kody do test_exercise_4_1_1.py, test_exercise_4_1_2.py, test_exercise_4_1_1.py, w każdym z kodów dodaj komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach przygotuj komentarze po angielsku, twoj opis kodu po Polsku, w kodach z testami bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodów z zadaniami dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programów. Kody z testami muszą zawierać w sekcjach from takie ścieżki src.Chapter04. następnie nazwę zadania oraz import odpowiednich testów, inaczej test nie będzie widział zadania.
-```
+Przygotuj kody do wszytkich zadań nazwy  wg schematu Exercise_4_4_1.py, Exercise_4_4_2.py itd. oraz przygotuj kody do testów wg. schematów test_exercise_4_4_1.py, test_exercise_4_4_2.py itd. w każdym z kodów dodaj komentarze na początku z opisem zadania czy testu i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach przygotuj komentarze po angielsku, twoj opis kodu po Polsku. Do kodów z zadaniami dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programów. W kodach z testami bez dynamicznego importu, tylko z bezpośrednim import pytest, zadania i testy będę ręcznie przesyłał do Repo na GitHub.  Kody z testami muszą zawierać w sekcjach from takie ścieżki: src.Chapter04. następnie nazwę zadania oraz import odpowiednich testów, inaczej test nie będzie widział zadania.```
 ---
 
 
