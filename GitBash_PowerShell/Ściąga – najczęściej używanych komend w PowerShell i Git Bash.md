@@ -11,7 +11,7 @@ cd C:\GitHub\Repo\Introduction-to-Algorithms-clrs-exercises
 
 ```
 ```shell
-New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_4_2
+New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_4_3
 
 ```
 ```shell
