@@ -5,7 +5,9 @@
   "preview_variables_in_command_palette": true,
   "show_autocomplete_menu": true,
   "working_directory": "",
-  "default_shells": {},
+  "default_shells": {
+    "win32": "CMD.EXE"
+  },
   "environment_variable_path_augmentations": {},
   "show_installation_warnings": true,
   "error_message_duration": 20,
@@ -26,9 +28,11 @@
     {
       "id": "wvs90w4pmy",
       "platform_specific_commands": {
-        "default": "pwsh -NoLogo -ExecutionPolicy Bypass -Command \"Invoke-Expression ('New_Item_ExerciseOrTest.ps1 -Chapter {0} -Name {1}_{2}_{3}' -f (Get-Content '{vault_path}/{relative_path}' | Select-String '^chapter:' | ForEach-Object {($_ -split ':')[1].Trim()}), (Get-Content '{vault_path}/{relative_path}' | Select-String '^name_a:' | ForEach-Object {($_ -split ':')[1].Trim()}), (Get-Content '{vault_path}/{relative_path}' | Select-String '^name_b:' | ForEach-Object {($_ -split ':')[1].Trim()}), (Get-Content '{vault_path}/{relative_path}' | Select-String '^name_c:' | ForEach-Object {($_ -split ':')[1].Trim()})))\"\n"
+        "default": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\Launcher.ps1\" -NotePath \"{{file_path}}\""
       },
-      "shells": {},
+      "shells": {
+        "win32": "CMD.EXE"
+      },
       "alias": "Run_Exercise",
       "icon": "lucide-arrow-down-circle",
       "confirm_execution": false,

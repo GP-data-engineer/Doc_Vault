@@ -72,7 +72,7 @@ const copyBtn = makeBtn("Kopiuj komendę", async () => {
 copyBtn.style.marginTop = "8px";
 box.appendChild(copyBtn);
 ```
----
+
 ```button
 name: Uruchom Exercise
 type: command
