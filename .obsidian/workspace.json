@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+                "file": "GitBash_PowerShell/Makrdown_tips.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ściąga – najczęściej używanych komend w PowerShell i Git Bash"
+              "title": "Makrdown_tips"
+            }
+          },
+          {
+            "id": "6d92b2a5ba04dd7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GitBash_PowerShell/Test_001.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Test_001"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,8 +89,7 @@
               "title": "Ulubione"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,14 +181,16 @@
       "daily-notes:Otwórz codzienną notatkę": false,
       "templates:Wstaw szablon": false,
       "command-palette:Otwórz listę poleceń": false,
-      "bases:Stwórz nową bazę danych": false
+      "bases:Stwórz nową bazę danych": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "9835eef9bbfb5be4",
+  "active": "6d92b2a5ba04dd7e",
   "lastOpenFiles": [
     "GitBash_PowerShell/Makrdown_tips.md",
-    "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
+    "GitBash_PowerShell/Test_001.md",
     "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+    "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
