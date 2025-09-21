@@ -1,5 +1,29 @@
-
+# Ściąga – najczęściej używanych komend w PowerShell i Git Bash
+---
 **Najczęściej używane sekwencje:**
+
+```button
+name: Run Exercise
+type: copy
+action: New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_4_9
+```
+
+
+### 2. **Plugin: Templater**
+Pozwala na dynamiczne generowanie treści (np. zmiana Chapter, Name).
+
+**Przykład zmiennej z inkrementacją:**
+```markdown
+<%* let chapter = 4; chapter++ %>
+New_Item_ExerciseOrTest.ps1 -Chapter <%= chapter %> -Name 4_4_9
+```
+
+
+
+```shell
+cd Script; Get-ChildItem
+
+```
 ```shell
 cd C:\
 cd GitHub\Repo\Doc_Vault
