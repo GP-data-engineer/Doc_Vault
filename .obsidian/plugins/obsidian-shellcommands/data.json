@@ -24,13 +24,13 @@
   "max_visible_lines_in_shell_command_fields": false,
   "shell_commands": [
     {
-      "id": "n6qev2tbbm",
+      "id": "wvs90w4pmy",
       "platform_specific_commands": {
-        "default": "pwsh -NoLogo -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\New_Item_ExerciseOrTest.ps1\" -Chapter 04 -Name 4_4_9\n"
+        "default": "pwsh -NoLogo -ExecutionPolicy Bypass -Command \"Invoke-Expression ('New_Item_ExerciseOrTest.ps1 -Chapter {0} -Name {1}_{2}_{3}' -f (Get-Content '{vault_path}/{relative_path}' | Select-String '^chapter:' | ForEach-Object {($_ -split ':')[1].Trim()}), (Get-Content '{vault_path}/{relative_path}' | Select-String '^name_a:' | ForEach-Object {($_ -split ':')[1].Trim()}), (Get-Content '{vault_path}/{relative_path}' | Select-String '^name_b:' | ForEach-Object {($_ -split ':')[1].Trim()}), (Get-Content '{vault_path}/{relative_path}' | Select-String '^name_c:' | ForEach-Object {($_ -split ':')[1].Trim()})))\"\n"
       },
       "shells": {},
-      "alias": "Run Exercise",
-      "icon": null,
+      "alias": "Run_Exercise",
+      "icon": "lucide-arrow-down-circle",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
@@ -67,6 +67,28 @@
     "obsidian_uri": true,
     "output_assignment": true
   },
-  "custom_shells": [],
+  "custom_shells": [
+    {
+      "id": "mydka2tj7o",
+      "name": "",
+      "description": "",
+      "binary_path": "",
+      "shell_arguments": [
+        "-c",
+        "{{!shell_command_content}}"
+      ],
+      "host_platform": "win32",
+      "host_platform_configurations": {
+        "win32": {
+          "quote_shell_arguments": true
+        }
+      },
+      "shell_platform": null,
+      "escaper": "PowerShell",
+      "path_translator": null,
+      "shell_command_wrapper": null,
+      "shell_command_test": null
+    }
+  ],
   "output_wrappers": []
 }

@@ -1,14 +1,11 @@
 ---
 title: Sterownik zadań (PS/Py)
-chapter: 4        # rozdział (liczba)
-name_a: 4         # pierwsza liczba z Name (a_b_c)
-name_b: 4         # druga liczba z Name
-name_c: 9         # trzecia liczba z Name
+chapter: 4
+name_a: 4
+name_b: 5
+name_c: 2
 script_ps1: New_Item_ExerciseOrTest.ps1
-# Jeśli masz plugin "Shell commands", skonfiguruj komendę do uruchomienia PS:
-# shell_command_id: Run: New_Item_ExerciseOrTest
 ---
-
 # Panel sterowania
 
 > Ustaw wartości przyciskami, a komenda zostanie zaktualizowana poniżej. Kopiuj jednym kliknięciem.
@@ -74,7 +71,9 @@ const copyBtn = makeBtn("Kopiuj komendę", async () => {
 });
 copyBtn.style.marginTop = "8px";
 box.appendChild(copyBtn);
-
-// (Opcjonalnie) wywołanie przez plugin "Shell commands"
-// Jeśli ustawisz w YAML klucz 'shell_command_id' odpowiadający skonfigurowanej komendzie,
-// możesz zmapować ją tutaj (wymaga wsparcia API pluginu — część instalacji może się różnić).
+```
+---
+```button
+name: Uruchom Exercise
+type: command
+action: Shell commands: Run_Exercise

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitBash_PowerShell/Test_002.md",
-                "mode": "source",
+                "file": "GitBash_PowerShell/Run_Exercise.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Test_002"
+              "title": "Run_Exercise"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GitBash_PowerShell/Test_002.md",
+                "file": "GitBash_PowerShell/Run_Exercise.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Konspekt Test_002"
+              "title": "Konspekt Run_Exercise"
             }
           }
         ],
@@ -173,15 +173,15 @@
   },
   "active": "d4a461358b6f5018",
   "lastOpenFiles": [
+    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
+    "GitBash_PowerShell/Run_Exercise.md",
+    "GitBash_PowerShell/Makrdown_tips.md",
     "Bez nazwy.base",
     "Bez nazwy 2.base",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "Bez nazwy 1.base",
-    "GitBash_PowerShell/Test_002.md",
     "GitBash_PowerShell/Test_001.md",
-    "GitBash_PowerShell/Makrdown_tips.md",
-    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
