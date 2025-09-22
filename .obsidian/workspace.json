@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "GitBash_PowerShell/Control_Panel_01.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -165,9 +165,19 @@
               "icon": "lucide-list",
               "title": "Konspekt Control_Panel_01"
             }
+          },
+          {
+            "id": "e640b8d9f24e708b",
+            "type": "leaf",
+            "state": {
+              "type": "SC-custom-variables-view",
+              "state": {},
+              "icon": "code-glyph",
+              "title": "Shell commands: Custom variables"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
