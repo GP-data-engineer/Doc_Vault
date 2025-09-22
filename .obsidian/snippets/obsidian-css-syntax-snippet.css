@@ -1,0 +1,22 @@
+
+/* Obsidian CSS Snippet: Custom syntax highlighting for CSS code blocks */
+
+/* Selektory (np. body, .class, #id) #FB2C36 - czerwony  */
+.cm-s-obsidian span.cm-tag {
+  color: #FB2C36 !important;
+}
+
+/* Właściwości CSS (np. color, margin) #21BCFF #5CCEFF - niebieskawy */
+.cm-s-obsidian span.cm-property {
+  color: #5CCEFF !important;
+}
+
+/* Wartości CSS (np. red, 10px) #FF8904 - pomarańczowy */
+.cm-s-obsidian span.cm-string {
+  color: #FF8904 !important;
+}
+
+/* Komentarze CSS (np. /* komentarz) - #31C950 - zielony */ 
+.cm-s-obsidian span.cm-comment {
+  color: #31C950 !important;
+}

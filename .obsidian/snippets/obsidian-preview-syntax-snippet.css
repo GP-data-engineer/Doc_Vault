@@ -1,0 +1,46 @@
+
+/* === Obsidian Preview Mode Syntax Highlighting === */
+
+/* CSS Syntax */
+code.language-css span.token.selector {
+  color: #FB2C36;
+}
+code.language-css span.token.property {
+  color: #5C9DFF;
+}
+code.language-css span.token.string,
+code.language-css span.token.value {
+  color: #FF8904;
+}
+code.language-css span.token.comment {
+  color: #31C950;
+}
+
+/* HTML Syntax */
+code.language-html span.token.tag {
+  color: #FB2C36;
+}
+code.language-html span.token.attr-name {
+  color: #5C9DFF;
+}
+code.language-html span.token.attr-value {
+  color: #FF8904;
+}
+code.language-html span.token.comment {
+  color: #31C950;
+}
+
+/* JavaScript Syntax */
+code.language-javascript span.token.keyword {
+  color: #FB2C36;
+}
+code.language-javascript span.token.property {
+  color: #5C9DFF;
+}
+code.language-javascript span.token.string,
+code.language-javascript span.token.number {
+  color: #FF8904;
+}
+code.language-javascript span.token.comment {
+  color: #31C950;
+}
