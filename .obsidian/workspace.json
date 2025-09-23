@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
+                "file": "GitBash_PowerShell/Control_Panel_01.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ściąga najczęściej używanych komend w PowerShell i Git Bash"
+              "title": "Control_Panel_01"
             }
           }
         ],
@@ -212,6 +212,7 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/Control_Panel_01.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/_IO_.md",
@@ -227,7 +228,6 @@
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "Bez nazwy 2.base",
     "GitBash_PowerShell/Test_001.md",
-    "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/Makrdown_tips.md",
     "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
     "_IO_",
