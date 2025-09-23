@@ -1,10 +1,10 @@
-# Ściąga – najczęściej używanych komend w PowerShell i Git Bash
+
 ---
 **Najczęściej używane sekwencje:**
 
 ```button
 name: Run Exercise
-type: copy
+type: command
 action: New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_4_9
 ```
 
@@ -14,8 +14,8 @@ Pozwala na dynamiczne generowanie treści (np. zmiana Chapter, Name).
 
 **Przykład zmiennej z inkrementacją:**
 ```markdown
-<%* let chapter = 4; chapter++ %>
 New_Item_ExerciseOrTest.ps1 -Chapter <%= chapter %> -Name 4_4_9
+
 ```
 
 
@@ -146,7 +146,7 @@ przygotuj kod do zadania Exercise_4_2_7.py oraz przygotuj kod do test_exercise_4
 ```
 ### Prompt dla kilku Zadań
 ```
-Przygotuj kody do wszytkich zadań nazwy  wg schematu Exercise_4_4_1.py, Exercise_4_4_2.py itd. oraz przygotuj kody do testów wg. schematów test_exercise_4_4_1.py, test_exercise_4_4_2.py itd. w każdym z kodów dodaj komentarze na początku z opisem zadania czy testu i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach przygotuj komentarze po angielsku, twoj opis kodu po Polsku. Do kodów z zadaniami dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programów. W kodach z testami bez dynamicznego importu, tylko z bezpośrednim import pytest, zadania i testy będę ręcznie przesyłał do Repo na GitHub.  Kody z testami muszą zawierać w sekcjach from takie ścieżki: src.Chapter04. następnie nazwę zadania oraz import odpowiednich testów, inaczej test nie będzie widział zadania.
+Przygotuj kody do wszytkich zadań nazwy  wg schematu Exercise_4_5_1.py, Exercise_4_5_2.py itd. oraz przygotuj kody do testów wg. schematów test_exercise_4_5_1.py, test_exercise_4_5_2.py itd. W każdym z kodów dodaj w języku angielskim komentarze na początku z opisem zadania czy testu i zwięzłe komentarze w środku kodu opisujące co robi kod. Twoj opis kodu po Polsku. Do kodów z zadaniami dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programów. W kodach z testami bez dynamicznego importu, tylko z bezpośrednim import pytest, zadania i testy będę ręcznie przesyłał do Repo na GitHub.  Kody z testami muszą zawierać w sekcjach from takie ścieżki: src.Chapter04. następnie nazwę zadania oraz import odpowiednich testów, inaczej test nie będzie widział zadania.
 ```
 ---
 
