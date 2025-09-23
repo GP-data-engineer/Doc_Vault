@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
-                "mode": "source",
+                "file": "GitBash_PowerShell/Control_Panel_01.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wprowadzenie_do_Algorytmow_2012"
+              "title": "Control_Panel_01"
             }
           }
         ],
@@ -212,10 +212,10 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "GitBash_PowerShell/Control_Panel_01.md",
     "_IO_/_IO_.md",
     "_IO_/Obsidian.md",
-    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "Bez nazwy 1.base",
     "Bez nazwy.base",
     "Bez nazwy 4.base",
