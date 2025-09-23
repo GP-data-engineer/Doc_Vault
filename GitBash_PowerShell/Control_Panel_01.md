@@ -76,4 +76,8 @@ box.appendChild(copyBtn);
 ```button
 name: Uruchom Exercise
 type: command
-action: Shell commands: obsidian-shellcommands:shell-command-wvs90w4pmy
+action: shell-command-wvs90w4pmy
+```
+
+
+
