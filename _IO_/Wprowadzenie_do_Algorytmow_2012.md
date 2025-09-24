@@ -8,3 +8,8 @@
 ---
 
 [Wprowadzenie_do_algorytmów_(2012)](./Wprowadzenie%20do%20algorytm%C3%B3w_(2012).pdf)
+
+
+---
+
+str. 96
