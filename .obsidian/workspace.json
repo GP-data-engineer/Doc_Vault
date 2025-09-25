@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
+                "file": "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ściąga najczęściej używanych komend w PowerShell i Git Bash"
+              "title": "New_Item_ExerciseOrTest.ps1 – Quick Guide"
             }
           }
         ],
@@ -212,9 +212,10 @@
   },
   "active": "ee48d01b145f42d3",
   "lastOpenFiles": [
-    "Scripts",
+    "Scripts/New_Item_ExerciseOrTest.ps1",
     "GitBash_PowerShell/Makrdown_tips.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
+    "Scripts",
     "GitBash_PowerShell/Test_001.md",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
