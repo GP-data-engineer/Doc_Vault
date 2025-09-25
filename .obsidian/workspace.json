@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
+                "file": "GitBash_PowerShell/Control_Panel_01.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "New_Item_ExerciseOrTest.ps1 – Quick Guide"
+              "title": "Control_Panel_01"
             }
           }
         ],
@@ -210,15 +210,15 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "ee48d01b145f42d3",
+  "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "Scripts/New_Item_ExerciseOrTest.ps1",
     "GitBash_PowerShell/Makrdown_tips.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "Scripts",
     "GitBash_PowerShell/Test_001.md",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
-    "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "Bez nazwy 1.base",
     "Bez nazwy 2.base",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
@@ -238,7 +238,6 @@
     "2025-09-12.md",
     "PS1",
     "Witaj.md",
-    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash",
-    "GitBash_PowerShell"
+    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash"
   ]
 }
