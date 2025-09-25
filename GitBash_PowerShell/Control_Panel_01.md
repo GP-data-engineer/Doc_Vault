@@ -3,7 +3,7 @@ title: Sterownik zadań (PS/Py)
 chapter: 4
 name_a: 4
 name_b: 5
-name_c: 3
+name_c: 4
 script_ps1: New_Item_ExerciseOrTest.ps1
 ---
 # Panel sterowania
