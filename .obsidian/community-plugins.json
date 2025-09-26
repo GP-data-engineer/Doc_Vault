@@ -2,5 +2,8 @@
   "buttons",
   "dataview",
   "obsidian-shellcommands",
-  "obsidian-excel-to-markdown-table"
+  "obsidian-excel-to-markdown-table",
+  "templater-obsidian",
+  "copy-document-as-html",
+  "obsidian-enhancing-export"
 ]
