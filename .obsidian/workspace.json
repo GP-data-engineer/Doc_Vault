@@ -207,7 +207,8 @@
       "templates:Wstaw szablon": false,
       "command-palette:Otwórz listę poleceń": false,
       "bases:Stwórz nową bazę danych": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "ea22e1d9c065538a",
