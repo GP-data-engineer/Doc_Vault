@@ -5,5 +5,8 @@
   "obsidian-excel-to-markdown-table",
   "templater-obsidian",
   "copy-document-as-html",
-  "obsidian-enhancing-export"
+  "obsidian-enhancing-export",
+  "obsidian-pandoc",
+  "table-editor-obsidian",
+  "advanced-merger"
 ]

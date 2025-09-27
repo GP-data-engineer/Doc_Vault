@@ -39,14 +39,12 @@
             "id": "ea22e1d9c065538a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "GitBash_PowerShell/Control_Panel_01.md",
-                "mode": "preview",
-                "source": false
+                "file": "GitBash_PowerShell/ProGit.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Control_Panel_01"
+              "icon": "lucide-file-text",
+              "title": "ProGit"
             }
           }
         ],
@@ -107,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 469.5
+    "width": 385.5
   },
   "right": {
     "id": "5f872fe8410219d7",
@@ -200,6 +198,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Otwórz okno szybkiego wyboru": false,
       "graph:Otwórz graf": false,
       "canvas:Stwórz nową tablicę": false,
@@ -213,9 +212,13 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
+    "GitBash_PowerShell/ProGit.pdf",
+    "GitBash_PowerShell/progit.pdf",
+    "GitBash_PowerShell/Makrdown_tips.md",
+    "GitBash_PowerShell/Control_Panel_01.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "Scripts/New_Item_ExerciseOrTest.ps1",
-    "GitBash_PowerShell/Makrdown_tips.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "Scripts",
     "GitBash_PowerShell/Test_001.md",
@@ -227,8 +230,6 @@
     "_IO_/Obsidian.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
-    "GitBash_PowerShell/Control_Panel_01.md",
-    "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
     "Bez nazwy.base",
     "Bez nazwy 4.base",
     "Bez nazwy 3.base",
@@ -237,8 +238,6 @@
     "GitBash_PowerShell/CMD.md",
     "Bez nazwy.canvas",
     "2025-09-12.md",
-    "PS1",
-    "Witaj.md",
-    "GitBash_PowerShell/Ściąga – najczęściej używanych komend w PowerShell i Git Bash"
+    "Witaj.md"
   ]
 }
