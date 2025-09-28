@@ -212,3 +212,23 @@ Przygotuj kody do wszytkich zadań nazwy  wg schematu Exercise_4_5_1.py, Exercis
 | **Ścieżki**                       | `C:\folder\plik.txt`                               | `/c/folder/plik.txt`                | Git Bash używa stylu linuksowego.                                 |
 
 ---
+============================
+
+Prompt do generowania 
+```
+Do programu Obsidian potrzebuje podobny kod do powyższego w celu generowania komendy do uruchamiania skryptu w PowerShell który tworzy nazwy pliku:
+przykład nazwy: Problem_X_Y.py.
+Nazwa ta jest generowana w już przygotowanym skrypcie o nazwie: 
+"New_Item_ExerciseOrTest.ps1".
+
+Przykładowe polecenie wywpłujące sktypt wygląda nastepująco: "New_Item_ExerciseOrTest.ps1 -Chapter 04 -Name 4_1".
+Powyższe polecenie utworzy pliki o nazwie Problem_4_1.py
+
+W kodzie do Obsidian potrzebne są przyciski: 
+1) do kopiowania komendy do PowerSchell, 
+2) dwa przyski do iteracji w górę i w dół Chapter. 
+3) dwa przyciski do iteracji w górę i w dół dla wartości X.
+4) dwa przyciski do iteracji w górę i w dół dla wartości X.
+
+dokładnie jak jest to w przykładzie powyższego kodu. 
+```

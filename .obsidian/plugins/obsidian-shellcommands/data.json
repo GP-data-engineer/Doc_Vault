@@ -28,7 +28,8 @@
     {
       "id": "wvs90w4pmy",
       "platform_specific_commands": {
-        "default": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\Launcher.ps1\" -NotePath \"{{file_path}}\""
+        "default": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\Launcher.ps1\" -NotePath \"{{file_path}}\"",
+        "win32": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\Launcher.ps1\" -NotePath \"{{file_path}}\""
       },
       "shells": {},
       "alias": "Run_Exercise",
