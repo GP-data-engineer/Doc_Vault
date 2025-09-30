@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML/_info.md",
+                "file": "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_info"
+              "title": "Control_Panel_Exercise_Problem"
             }
           }
         ]
@@ -186,12 +186,12 @@
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+    "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
     "HTML/_info.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/ProGit.pdf",
     "GitBash_PowerShell/Test_001.md",
     "HTML",
-    "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
     "_IO_/Książki.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "GitBash_PowerShell/Control_Panel_01.md",
