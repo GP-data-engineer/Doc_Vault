@@ -1,4 +1,10 @@
-
+---
+title: Wprowadzenie_do_Algorytmow_2012
+author: CLRS
+tags:
+  - notatka
+Strona_PDF: 76 (120)
+---
 
 ---
 
@@ -11,5 +17,4 @@
 
 
 ---
-
-str. 120
+`## Moja sekcja { .blue }`

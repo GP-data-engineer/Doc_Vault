@@ -14,6 +14,7 @@
 .red   { --custom-color: #ff5555; }
 .green { --custom-color: #55ff55; }
 .blue  { --custom-color: #5599ff; }
+.zielona {color: green;}
 
 /* Upewnij się, że kolory działają także w trybie drukowania */
 @media print {
