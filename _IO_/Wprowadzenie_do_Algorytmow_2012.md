@@ -1,20 +1,15 @@
 ---
-title: Wprowadzenie_do_Algorytmow_2012
+title: Wprowadzenie_do_Algorytmow_(2012)
 author: CLRS
 tags:
   - notatka
-Strona_PDF: 76 (120)
+pdf_path: C:/Algorytmy/Wprowadzenie do algorytmów/Wprowadzenie do algorytmów_(2012).pdf
+Strona_PDF: 76
 ---
 
----
+## 📑 Dokument
 
-[Wprowadzenie do algorytmów_(2012)](file:///C:/Algorytmy/Wprowadzenie%20do%20algorytm%C3%B3w/Wprowadzenie%20do%20algorytm%C3%B3w_(2012).pdf)
-
-
----
-
-[Wprowadzenie_do_algorytmów_(2012)](./Wprowadzenie%20do%20algorytm%C3%B3w_(2012).pdf)
-
-
----
-`## Moja sekcja { .blue }`
+```dataviewjs
+const pdf = dv.current().pdf_path;
+const page = dv.current().Strona_PDF;
+dv.paragraph(`[Otwórz PDF na stronie ${page}](file:///${pdf}#page=${page})`);

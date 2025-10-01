@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:notatka",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
