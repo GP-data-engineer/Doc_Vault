@@ -101,7 +101,7 @@
     {
       "id": "q6gehy9w4v",
       "platform_specific_commands": {
-        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf.ps1\" -PdfPath \"C:\\Algorytmy\\Wprowadzenie do algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf\" -Page {{value}}\n\n\n"
+        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf.ps1\" -PdfPath \"C:\\Algorytmy\\Wprowadzenie_do_algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf\" -Page {{value}}\n\n\n"
       },
       "shells": {},
       "alias": "open-pdf",
