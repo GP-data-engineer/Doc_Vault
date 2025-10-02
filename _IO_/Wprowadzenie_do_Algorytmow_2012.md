@@ -3,14 +3,9 @@ title: Wprowadzenie_do_Algorytmow_(2012)
 author: CLRS
 tags:
   - notatka
-pdf_path: C:/Algorytmy/Wprowadzenie do algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
+pdf_path: C:\Algorytmy\Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
 Strona_PDF: 76
 ---
-
-```dataviewjs
-app.commands.executeCommandById("shell-commands.open-pdf", { value: fm.Strona_PDF });
-```
-
 
 ## 📑 Dokument
 
@@ -40,16 +35,12 @@ const saveFm = async (updates) => {
   dv.containerEl.querySelector("#pageOut").textContent = fm.Strona_PDF;
 };
 
-// --- Funkcja otwierająca PDF przez PowerShell ---
-// UWAGA: wymaga pluginu "Shell commands" i skonfigurowanej komendy
+// --- Funkcja otwierająca PDF przez Shell commands ---
 const openPdf = () => {
-  const cmd = `powershell -ExecutionPolicy Bypass -File "C:/GitHub/Repo/Scripts/src/OpenPdf.ps1" -PdfPath "${pdf}" -Page ${fm.Strona_PDF}`;
-  if (app.commands.executeCommandById) {
-    // wywołanie pluginu Shell commands
-    app.commands.executeCommandById("shell-commands.run", { command: cmd });
-  } else {
-    new Notice("Plugin Shell commands nie jest dostępny");
-  }
+  app.commands.executeCommandById("shell-commands.open-pdf", {
+    pdf: pdf,
+    page: fm.Strona_PDF
+  });
 };
 
 // --- Funkcja tworząca przycisk ---
@@ -79,8 +70,6 @@ box.appendChild(btn);
 
 
 
-
-
 [Wprowadzenie_do_algorytmów_(2012)](file:///C:/Algorytmy/Wprowadzenie%20do%20algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf)
 
 
@@ -89,11 +78,11 @@ box.appendChild(btn);
 
 
 ```shell
-& "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /A "page=77" "C:\Algorytmy\Wprowadzenie do algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf"
+& "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /A "page=77" "C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf"
 ```
 
 ```shell
-powershell -ExecutionPolicy Bypass -File "C:\GitHub\Repo\Scripts\src\OpenPdf.ps1" -PdfPath "C:\Algorytmy\Wprowadzenie do algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf" -Page 77
+powershell -ExecutionPolicy Bypass -File "C:\GitHub\Repo\Scripts\src\OpenPdf.ps1" -PdfPath "C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf" -Page 77
 ```
 
 ---
