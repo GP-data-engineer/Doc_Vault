@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "Wprowadzenie_do_Algorytmow_2012"
             }
+          },
+          {
+            "id": "0f68d2976d1a62c3",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "Informacje o wersji 1.9.14"
+            }
           }
         ]
       }
@@ -185,8 +197,14 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "_IO_/OpenPdf_01.ps1",
+    "_IO_/OpenPdf.ps1",
     "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
+    "_IO_/_IO_.md",
+    "Scripts/OpenPdf.ps1",
+    "Scripts/Nowy Dokument tekstowy.txt",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+    "_IO_/Obsidian.md",
     "HTML/_info.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/ProGit.pdf",
@@ -197,8 +215,6 @@
     "GitBash_PowerShell/Control_Panel_01.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "GitBash_PowerShell/Docker.md",
-    "_IO_/Obsidian.md",
-    "_IO_/_IO_.md",
     "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
     "GitBash_PowerShell/progit.pdf",
     "GitBash_PowerShell/Makrdown_tips.md",
@@ -208,9 +224,6 @@
     "Bez nazwy 1.base",
     "Bez nazwy 2.base",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
-    "Bez nazwy.base",
-    "Bez nazwy 4.base",
-    "Bez nazwy 3.base",
     "README.md",
     "GitBash_PowerShell/CMD.md",
     "Bez nazwy.canvas",
