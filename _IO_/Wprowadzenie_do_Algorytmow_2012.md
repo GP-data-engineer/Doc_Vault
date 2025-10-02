@@ -3,7 +3,7 @@ title: Wprowadzenie_do_Algorytmow_(2012)
 author: CLRS
 tags:
   - notatka
-pdf_path: C:\Algorytmy\Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
+pdf_path: C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf
 Strona_PDF: 76
 ---
 
@@ -37,11 +37,9 @@ const saveFm = async (updates) => {
 
 // --- Funkcja otwierająca PDF przez Shell commands ---
 const openPdf = () => {
-  app.commands.executeCommandById("shell-commands.open-pdf", {
-    pdf: pdf,
-    page: fm.Strona_PDF
-  });
+  app.commands.executeCommandById("obsidian-shellcommands:shell-command-q6gehy9w4v", { value: fm.Strona_PDF });
 };
+
 
 // --- Funkcja tworząca przycisk ---
 const makeBtn = (label, onClick) => {
@@ -68,11 +66,7 @@ box.appendChild(btn);
 
 ---
 
-
-
-[Wprowadzenie_do_algorytmów_(2012)](file:///C:/Algorytmy/Wprowadzenie%20do%20algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf)
-
-
+[Wprowadzenie_do_algorytmów_(2012)](file:///C:/Algorytmy/Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf)
 
 ---
 
@@ -92,3 +86,8 @@ powershell -ExecutionPolicy Bypass -File "C:\GitHub\Repo\Scripts\src\OpenPdf.ps1
 powershell -ExecutionPolicy Bypass -File "C:/GitHub/Repo/Scripts/src/OpenPdf.ps1" -PdfPath "C:/Algorytmy/Wprowadzenie do algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf" -Page {{value}}
 ```
 
+```
+w dodatku Shell command, komenda o nazwie: "open-pdf" wywpłuje: "powershell -ExecutionPolicy Bypass -File "C:\GitHub\Repo\Scripts\src\OpenPdf.ps1" -PdfPath "C:\Algorytmy\Wprowadzenie do algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf" -Page {{value}}"
+
+mimo to generuje błąd taki jak na scrennie
+```

@@ -65,7 +65,7 @@
     {
       "id": "nlblvsq21a",
       "platform_specific_commands": {
-        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf.ps1\" -PdfPath \"C:\\Algorytmy\\Wprowadzenie do algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf\" -Page 77"
+        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf.ps1\" -PdfPath \"C:\\Algorytmy\\Wprowadzenie_do_algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf\" -Page Strona_PDF"
       },
       "shells": {},
       "alias": "open-pdf_01",
@@ -101,7 +101,7 @@
     {
       "id": "q6gehy9w4v",
       "platform_specific_commands": {
-        "default": "powershell -ExecutionPolicy Bypass -File \"C:/GitHub/Repo/Scripts/src/OpenPdf.ps1\" -PdfPath \"{{pdf}}\" -Page {{page}}\n"
+        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf.ps1\" -PdfPath \"C:\\Algorytmy\\Wprowadzenie do algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf\" -Page {{value}}\n\n\n"
       },
       "shells": {},
       "alias": "open-pdf",
@@ -132,7 +132,12 @@
       "debounce": null,
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {
+        "{{yaml_values}}": {
+          "type": "inherit",
+          "value": "Strona_PDF"
+        }
+      }
     }
   ],
   "prompts": [],
