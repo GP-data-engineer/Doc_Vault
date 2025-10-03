@@ -4,7 +4,7 @@ author: CLRS
 tags:
   - notatka
 pdf_path: C:/Algorytmy/Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
-Strona_PDF: 76
+Strona_PDF: 86
 ---
 
 ## 📑 Dokument
@@ -35,8 +35,10 @@ const saveFm = async (updates) => {
 };
 
 // --- Funkcja otwierająca PDF ---
+// --- "obsidian-shellcommands:shell-command-nlblvsq21a"
+// --- "obsidian-shellcommands:shell-command-q6gehy9w4v"
 const openPdf = () => {
-  app.commands.executeCommandById("obsidian-shellcommands:shell-command-q6gehy9w4v", {
+  app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", {
     pdf: fm.pdf_path,
     page: fm.Strona_PDF
   });
