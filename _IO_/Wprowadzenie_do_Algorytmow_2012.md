@@ -3,7 +3,7 @@ title: Wprowadzenie_do_Algorytmow_(2012)
 author: CLRS
 tags:
   - notatka
-pdf_path: C:/Algorytmy/Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
+pdf_path: '"C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf"'
 Strona_PDF: 86
 ---
 
@@ -39,8 +39,8 @@ const saveFm = async (updates) => {
 // --- "obsidian-shellcommands:shell-command-q6gehy9w4v"
 const openPdf = () => {
   app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", {
-    pdf: fm.pdf_path,
-    page: fm.Strona_PDF
+    pdf_path: fm.pdf_path,
+    Strona_PDF: fm.Strona_PDF
   });
 };
 

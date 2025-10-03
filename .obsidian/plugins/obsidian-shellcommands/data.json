@@ -65,7 +65,7 @@
     {
       "id": "nlblvsq21a",
       "platform_specific_commands": {
-        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf_01.ps1\" \"C:\\Algorytmy\\Wprowadzenie_do_algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf\""
+        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf_01.ps1\" -Pdf_Path {{pdf_path}} -Strona_PDF {{Strona_PDF}}\n"
       },
       "shells": {},
       "alias": "open-pdf_01",
