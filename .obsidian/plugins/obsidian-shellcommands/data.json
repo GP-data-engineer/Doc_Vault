@@ -65,7 +65,7 @@
     {
       "id": "nlblvsq21a",
       "platform_specific_commands": {
-        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf_01.ps1\" -Pdf_Path {{pdf_path}} -Strona_PDF {{Strona_PDF}}\n"
+        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf_01.ps1\" -pdf_path {{pdf_path}} -Strona_PDF {{Strona_PDF}}\n"
       },
       "shells": {},
       "alias": "open-pdf_01",
