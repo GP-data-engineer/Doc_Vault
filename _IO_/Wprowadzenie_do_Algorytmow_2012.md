@@ -12,7 +12,6 @@ Strona_PDF: 76
 ```dataviewjs
 // --- Pobranie frontmatter ---
 const fm = dv.current();
-const pdf = fm.pdf_path;
 
 // --- Funkcja zapisu do YAML ---
 const saveFm = async (updates) => {
@@ -35,11 +34,13 @@ const saveFm = async (updates) => {
   dv.containerEl.querySelector("#pageOut").textContent = fm.Strona_PDF;
 };
 
-// --- Funkcja otwierająca PDF przez Shell commands ---
+// --- Funkcja otwierająca PDF ---
 const openPdf = () => {
-  app.commands.executeCommandById("obsidian-shellcommands:shell-command-q6gehy9w4v", { value: fm.Strona_PDF });
+  app.commands.executeCommandById("obsidian-shellcommands:shell-command-q6gehy9w4v", {
+    pdf: fm.pdf_path,
+    page: fm.Strona_PDF
+  });
 };
-
 
 // --- Funkcja tworząca przycisk ---
 const makeBtn = (label, onClick) => {
@@ -50,15 +51,12 @@ const makeBtn = (label, onClick) => {
 
 // --- Render UI ---
 const box = dv.el("div", "", { cls: "ctrl-box" });
-
-// Wiersz do zmiany strony
 const rowPg = dv.el("div", "", { cls: "ctrl-row" }, box);
 dv.el("span", "Strona PDF:", {}, rowPg);
 makeBtn("[−]", () => saveFm({ Strona_PDF: Math.max(1, (fm.Strona_PDF||1)-1) })).style.marginLeft="8px";
 makeBtn("[+]", () => saveFm({ Strona_PDF: (fm.Strona_PDF||1)+1 }));
 dv.el("span", fm.Strona_PDF, { attr: { id: "pageOut" }, style: "margin-left:12px; font-weight:bold;" }, rowPg);
 
-// Przycisk otwierający PDF
 const btn = makeBtn("Otwórz PDF", openPdf);
 btn.style.marginTop = "10px";
 box.appendChild(btn);
