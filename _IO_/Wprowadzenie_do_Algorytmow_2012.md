@@ -4,7 +4,7 @@ author: CLRS
 tags:
   - notatka
 pdf_path: C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf
-Strona_PDF: 86
+Strona_PDF: 14
 ---
 
 ## 📑 Dokument
@@ -12,6 +12,8 @@ Strona_PDF: 86
 ```dataviewjs
 // --- Pobranie frontmatter ---
 const fm = dv.current();
+const pdf_path = fm.pdf_path;
+const Strona_PDF = fm.Strona_PDF
 
 // --- Funkcja zapisu do YAML ---
 const saveFm = async (updates) => {
@@ -35,14 +37,12 @@ const saveFm = async (updates) => {
 };
 
 // --- Funkcja otwierająca PDF ---
-// --- "obsidian-shellcommands:shell-command-nlblvsq21a"
-// --- "obsidian-shellcommands:shell-command-q6gehy9w4v"
 const openPdf = () => {
-  app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", {
-    pdf_path: fm.pdf_path,
-    Strona_PDF: fm.Strona_PDF
-  });
+  const args = `"${fm.pdf_path}" ${fm.Strona_PDF}`;
+  app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", { value: args });
 };
+
+
 
 // --- Funkcja tworząca przycisk ---
 const makeBtn = (label, onClick) => {
@@ -72,11 +72,11 @@ box.appendChild(btn);
 
 
 ```shell
-& "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /A "page=77" "C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf"
+powershell -ExecutionPolicy Bypass -File & "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /A "page=77" "C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf"
 ```
 
 ```shell
-powershell -ExecutionPolicy Bypass -File "C:\GitHub\Repo\Scripts\src\OpenPdf.ps1" -PdfPath "C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf" -Page 77
+powershell -ExecutionPolicy Bypass -File "C:\GitHub\Repo\Scripts\src\OpenPdf.ps1" -PdfPath "C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf" -"Page=77"
 ```
 
 ---

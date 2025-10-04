@@ -6,7 +6,7 @@
   "show_autocomplete_menu": true,
   "working_directory": "",
   "default_shells": {
-    "win32": "CMD.EXE"
+    "win32": "PowerShell.exe"
   },
   "environment_variable_path_augmentations": {},
   "show_installation_warnings": true,
@@ -65,7 +65,7 @@
     {
       "id": "nlblvsq21a",
       "platform_specific_commands": {
-        "default": "powershell -ExecutionPolicy Bypass -File \"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf_01.ps1\" -pdf_path {{pdf_path}} -Strona_PDF {{Strona_PDF}}\n"
+        "default": "\"C:\\GitHub\\Repo\\Scripts\\src\\OpenPdf.bat\" {{value}}\n"
       },
       "shells": {},
       "alias": "open-pdf_01",
@@ -177,7 +177,11 @@
     }
   ],
   "prompts": [],
-  "builtin_variables": {},
+  "builtin_variables": {
+    "{{file_extension}}": {
+      "default_value": null
+    }
+  },
   "custom_variables": [],
   "custom_variables_notify_changes_via": {
     "obsidian_uri": true,
