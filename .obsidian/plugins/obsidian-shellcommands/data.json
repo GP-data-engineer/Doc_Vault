@@ -63,7 +63,8 @@
     {
       "id": "nlblvsq21a",
       "platform_specific_commands": {
-        "default": "powershell -ExecutionPolicy Bypass -File \"C:/GitHub/Repo/Scripts/src/OpenPdf_01.ps1\" {{value}}\n"
+      "default": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$page={{value}}; [System.Windows.MessageBox]::Show('PAGE=' + $page); & 'C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat\\Acrobat.exe' /A ('page=' + $page) 'C:\\Algorytmy\\Wprowadzenie_do_algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf'\""
+
       },
       "shells": {},
       "alias": "open-pdf_01",
@@ -176,7 +177,7 @@
     {
       "id": "p7398hqykw",
       "platform_specific_commands": {
-        "default": ""
+        "default": "powershell -ExecutionPolicy Bypass -File & \"C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat\\Acrobat.exe\" /A \"page=77\" \"C:\\Algorytmy\\Wprowadzenie_do_algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf\""
       },
       "shells": {},
       "alias": "",
@@ -214,9 +215,28 @@
   "builtin_variables": {
     "{{file_extension}}": {
       "default_value": null
+    },
+    "{{event_yaml_value}}": {
+      "default_value": null
+    },
+    "{{event_yaml_content}}": {
+      "default_value": {
+        "type": "value",
+        "value": ""
+      }
     }
   },
-  "custom_variables": [],
+  "custom_variables": [
+    {
+      "id": "7i53gno95l",
+      "name": "strona",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": ""
+      }
+    }
+  ],
   "custom_variables_notify_changes_via": {
     "obsidian_uri": true,
     "output_assignment": true

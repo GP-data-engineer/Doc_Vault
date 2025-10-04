@@ -10,7 +10,7 @@ Strona_PDF: 25
 ```dataviewjs
 // --- Pobranie frontmatter ---
 const fm = dv.current();
-const pdf_path = fm.pdf_path;
+//const pdf_path = fm.pdf_path;
 const Strona_PDF = fm.Strona_PDF;
 
 // --- Funkcja zapisu do YAML ---
@@ -34,11 +34,12 @@ const saveFm = async (updates) => {
   dv.containerEl.querySelector("#pageOut").textContent = fm.Strona_PDF;
 };
 
-// --- Funkcja otwierająca PDF ---
+// --- Funkcja otwierająca PDF --- -pdf_path "${fm.pdf_path}" 
 const openPdf = () => {
-const args = `-pdf_path "${fm.pdf_path}" -Page "Pa${fm.Strona_PDF}"`;
-app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", { value: args });
+  const args = fm.Strona_PDF; // np. 81
+  app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", { value: args });
 };
+
 
 
 // --- Funkcja tworząca przycisk ---
