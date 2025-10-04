@@ -1,10 +1,8 @@
 ---
 title: Wprowadzenie_do_Algorytmow_(2012)
 author: CLRS
-tags:
-  - notatka
-pdf_path: C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf
-Strona_PDF: 14
+pdf_path: C:/Algorytmy/Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
+Strona_PDF: 25
 ---
 
 ## 📑 Dokument
@@ -13,7 +11,7 @@ Strona_PDF: 14
 // --- Pobranie frontmatter ---
 const fm = dv.current();
 const pdf_path = fm.pdf_path;
-const Strona_PDF = fm.Strona_PDF
+const Strona_PDF = fm.Strona_PDF;
 
 // --- Funkcja zapisu do YAML ---
 const saveFm = async (updates) => {
@@ -38,10 +36,9 @@ const saveFm = async (updates) => {
 
 // --- Funkcja otwierająca PDF ---
 const openPdf = () => {
-  const args = `"${fm.pdf_path}" ${fm.Strona_PDF}`;
-  app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", { value: args });
+const args = `-pdf_path "${fm.pdf_path}" -Page "Pa${fm.Strona_PDF}"`;
+app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", { value: args });
 };
-
 
 
 // --- Funkcja tworząca przycisk ---
