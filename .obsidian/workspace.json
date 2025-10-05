@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
-                "mode": "source",
+                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wprowadzenie_do_Algorytmow_2012"
+              "title": "Wprowadzenie_do_Algorytmow_2012_z_zapisem"
             }
           }
         ]
@@ -185,8 +185,10 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
-    "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+    "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
+    "_IO_/Wprowadzenie_do_Algorytmow_2012 — kopia.md",
+    "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
     "_IO_/Obsidian.md",
     "Scripts/OpenPdf_01.ps1",
     "_IO_/OpenPdf_01.ps1",
