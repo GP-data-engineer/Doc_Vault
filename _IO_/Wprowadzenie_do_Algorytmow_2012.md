@@ -2,7 +2,7 @@
 title: Wprowadzenie_do_Algorytmow_(2012)
 author: CLRS
 pdf_path: C:/Algorytmy/Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
-Strona_PDF: 25
+Strona_PDF: 36
 ---
 
 ## 📑 Dokument
@@ -35,12 +35,11 @@ const saveFm = async (updates) => {
 };
 
 // --- Funkcja otwierająca PDF --- -pdf_path "${fm.pdf_path}" 
-const openPdf = () => {
-  const args = fm.Strona_PDF; // np. 81
-  app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a", { value: args });
+const openPdf = async () => {
+  const args = String(fm.Strona_PDF);
+  await navigator.clipboard.writeText(args);
+  app.commands.executeCommandById("obsidian-shellcommands:shell-command-nlblvsq21a");
 };
-
-
 
 // --- Funkcja tworząca przycisk ---
 const makeBtn = (label, onClick) => {

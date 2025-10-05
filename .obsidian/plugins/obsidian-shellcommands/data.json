@@ -2,8 +2,8 @@
   "settings_version": "0.23.0",
   "debug": false,
   "obsidian_command_palette_prefix": "Execute: ",
-  "preview_variables_in_command_palette": true,
-  "show_autocomplete_menu": true,
+  "preview_variables_in_command_palette": false,
+  "show_autocomplete_menu": false,
   "working_directory": "",
   "default_shells": {},
   "environment_variable_path_augmentations": {},
@@ -11,9 +11,9 @@
   "error_message_duration": 20,
   "notification_message_duration": 10,
   "execution_notification_mode": "disabled",
-  "output_channel_clipboard_also_outputs_to_notification": true,
+  "output_channel_clipboard_also_outputs_to_notification": false,
   "output_channel_notification_decorates_output": true,
-  "enable_events": true,
+  "enable_events": false,
   "approve_modals_by_pressing_enter_key": true,
   "command_palette": {
     "re_execute_last_shell_command": {
@@ -63,9 +63,7 @@
     {
       "id": "nlblvsq21a",
       "platform_specific_commands": {
-      "default": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$page={{value}}; [System.Windows.MessageBox]::Show('PAGE=' + $page); & 'C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat\\Acrobat.exe' /A ('page=' + $page) 'C:\\Algorytmy\\Wprowadzenie_do_algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf'\""
-
-      },
+      "default": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$page=(Get-Clipboard); & 'C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat\\Acrobat.exe' /A ('page=' + $page) 'C:\\Algorytmy\\Wprowadzenie_do_algorytmów\\Wprowadzenie_do_algorytmów_(2012).pdf'\""      },
       "shells": {},
       "alias": "open-pdf_01",
       "icon": null,
