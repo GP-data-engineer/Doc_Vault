@@ -2,9 +2,9 @@
 title: Sterownik zadań (PS/Py)
 Chapter: 5
 name_x: 5
-name_y: 4
-name_z: 7
-mode: Exercise
+name_y: 1
+name_z: 5
+mode: Problem
 script_ps1: New_Item_ExerciseOrTest.ps1
 ---
 
@@ -113,7 +113,7 @@ cd C:\GitHub\Repo\Introduction-to-Algorithms-clrs-exercises
 ---
 ### Prompt dla Problemu
 ```
-przygotuj kod dla problemu przykład nazwy pliku Problem_4_1.py oraz przygotuj kod do testu przykład nazwy pliku test_problem_4_1.py. W każdym z kodów dodaj w języku angielskim komentarze na początku z opisem zadania czy testu i zwięzłe komentarze w środku kodu opisujące co robi kod. Twoj opis kodu po Polsku. Do kodów z zadaniami dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programów. W kodach z testami bez dynamicznego importu, tylko z bezpośrednim import pytest, zadania i testy będę ręcznie przesyłał do Repo na GitHub.  Kody z testami muszą zawierać w sekcjach from takie ścieżki: src.Chapter04. następnie nazwę zadania oraz import odpowiednich testów, inaczej test nie będzie widział zadania.
+przygotuj kod dla problemu przykład nazwy pliku Problem_5_1.py oraz przygotuj kod do testu przykład nazwy pliku test_problem_5_1.py. W każdym z kodów dodaj w języku angielskim komentarze na początku z opisem zadania czy testu i zwięzłe komentarze w środku kodu opisujące co robi kod. Twoj opis kodu po Polsku. Do kodów z zadaniami dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programów. W kodach z testami bez dynamicznego importu, tylko z bezpośrednim import pytest, zadania i testy będę ręcznie przesyłał do Repo na GitHub.  Kody z testami muszą zawierać w sekcjach from takie ścieżki: src.Chapter04. następnie nazwę zadania oraz import odpowiednich testów, inaczej test nie będzie widział zadania.
 ```
 ### Prompt dla Zadania
 ```

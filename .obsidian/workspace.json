@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
+                "file": "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Control_Panel_Exercise_Problem"
+              "title": "_Control_Panel_Exercise_Problem"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5
+    "width": 401.5
   },
   "right": {
     "id": "5f872fe8410219d7",
@@ -185,10 +185,14 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "GitBash_PowerShell/Docker.md",
+    "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
+    "GitBash_PowerShell/Makrdown_tips.md",
+    "GitBash_PowerShell/ProGit.pdf",
+    "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012 — kopia.md",
-    "GitBash_PowerShell/Control_Panel_Exercise_Problem.md",
     "_IO_/Obsidian.md",
     "Scripts/OpenPdf_01.ps1",
     "_IO_/OpenPdf_01.ps1",
@@ -198,17 +202,13 @@
     "Scripts/Nowy Dokument tekstowy.txt",
     "HTML/_info.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
-    "GitBash_PowerShell/ProGit.pdf",
     "GitBash_PowerShell/Test_001.md",
     "HTML",
     "_IO_/Książki.md",
-    "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "GitBash_PowerShell/Control_Panel_01.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
-    "GitBash_PowerShell/Docker.md",
     "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
     "GitBash_PowerShell/progit.pdf",
-    "GitBash_PowerShell/Makrdown_tips.md",
     "Scripts/New_Item_ExerciseOrTest.ps1",
     "Scripts",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
