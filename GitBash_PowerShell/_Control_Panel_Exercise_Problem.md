@@ -121,7 +121,7 @@ przygotuj kod do zadania Exercise_4_2_7.py oraz przygotuj kod do test_exercise_4
 ```
 ### Prompt dla kilku Zadań
 ```
-Przygotuj kody do wszytkich zadań nazwy  wg schematu Exercise_5_1_1.py, Exercise_5_1_1.py itd. oraz przygotuj kody do testów wg. schematów test_exercise_5_1_1.py, test_exercise_4_5_2.py itd. W każdym z kodów dodaj w języku angielskim  i polskim komentarze na początku z opisem zadania czy testu i zwięzłe komentarze w środku kodu opisujące co robi kod. Twoj opis kodu po Polsku. Do kodów z zadaniami dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programów. W kodach z testami bez dynamicznego importu, tylko z bezpośrednim import pytest, zadania i testy będę ręcznie przesyłał do Repo na GitHub.  Kody z testami muszą zawierać w sekcjach from takie ścieżki: src.Chapter05. następnie nazwę zadania oraz import odpowiednich testów, inaczej test nie będzie widział zadania.
+Przygotuj kody do wszytkich zadań, nazwy wg schematu Exercise_6_4_1.py oraz przygotuj kody do testów test_exercise_5_1_1.py itd. omentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj opisy zadań po angielsku i po Polskudo, komentarze co robi kod po angielsku. Testy bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodów zadaniach dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter06. następnie nazwę zadania oraz import odpowiednich testów.
 ```
 ---
 
