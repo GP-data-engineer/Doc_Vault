@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+                "file": "Rust/_The Rust Standard Library.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wprowadzenie_do_Algorytmow_2012"
+              "title": "_The Rust Standard Library"
             }
           }
         ]
@@ -185,8 +185,10 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
-    "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+    "Rust/_The Rust Standard Library.md",
+    "Rust",
+    "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "_IO_/_IO_.md",
     "_IO_/Książki.md",
@@ -210,7 +212,6 @@
     "GitBash_PowerShell/Control_Panel_01.md",
     "GitBash_PowerShell/progit.pdf",
     "Scripts/New_Item_ExerciseOrTest.ps1",
-    "Scripts",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
     "README.md",
