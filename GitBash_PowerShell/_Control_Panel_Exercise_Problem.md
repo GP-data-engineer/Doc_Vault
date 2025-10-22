@@ -2,8 +2,8 @@
 title: Sterownik zadań (PS/Py)
 Chapter: 7
 name_x: 7
-name_y: 3
-name_z: 2
+name_y: 4
+name_z: 6
 mode: Exercise
 script_ps1: New_Item_ExerciseOrTest.ps1
 ---
@@ -121,7 +121,7 @@ przygotuj kod do zadania Exercise_4_2_7.py oraz przygotuj kod do test_exercise_4
 ```
 ### Prompt dla kilku Zadań
 ```
-Zadania z książki Wprowadzenie do Algorytmów CLRS ale w polskiej wersji językowej. Analizuj i przygotuj pełne działające implementacje algorytmów (np. pełny Quicksort, Insertion Sort, analiza T(n), symulacje głębokości drzewa itd.), wygeneruj kody do wszystkich zadań od razu. Przygotuj kody do wszytkich zadań, nazwy wg schematu Exercise_7_2_1.py itd. do wszystkich zadań aż do Exercise_7_2_6.py oraz przygotuj do każdego zadania kody do testów test_exercise_7_2_1.py itd. do wszystkich zadań, aż do test_exercise_7_2_6.py. Wyświetla odpowiedzi w parach tj. zdanie i test do zdania. Dla każdego kodu komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj opisy zadań po angielsku i po Polsku. Testy bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodów zadaniach dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter06. następnie nazwę zadania oraz import odpowiednich testów.
+Zadania z książki Wprowadzenie do Algorytmów CLRS ale w polskiej wersji językowej. Analizuj i przygotuj pełne działające implementacje algorytmów (np. pełny Quicksort, Insertion Sort, analiza T(n), symulacje głębokości drzewa itd.), wygeneruj kody do wszystkich zadań od razu. Przygotuj kody do wszytkich zadań, nazwy wg schematu Exercise_7_4_1.py itd. do wszystkich zadań aż do Exercise_7_4_6.py oraz przygotuj do każdego zadania kody do testów test_exercise_7_4_1.py itd. do wszystkich zadań, aż do test_exercise_7_4_6.py. Wyświetla odpowiedzi w parach tj. zdanie i test do zdania. Dla każdego kodu komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj opisy zadań po angielsku i po Polsku. Testy bez dynamicznego importu, tylko z bezpośrednim import pytest, będę przesyłał do Repo na GitHub. Do kodów zadaniach dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter06. następnie nazwę zadania oraz import odpowiednich testów.
 ```
 ---
 
