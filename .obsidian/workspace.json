@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
+                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Control_Panel_Exercise_Problem"
+              "title": "Wprowadzenie_do_Algorytmow_2012"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
-    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
+    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "Rust/_The Rust Standard Library.md",
