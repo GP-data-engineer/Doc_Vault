@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
-                "mode": "source",
+                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ściąga najczęściej używanych komend w PowerShell i Git Bash"
+              "title": "Wprowadzenie_do_Algorytmow_2012"
             }
           }
         ]
@@ -185,9 +185,10 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
+    "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/ProGit.pdf",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
-    "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
     "GitBash_PowerShell/Docker.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
@@ -201,7 +202,6 @@
     "HTML/_info.md",
     "GitBash_PowerShell/Test_001.md",
     "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
-    "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012 — kopia.md",
     "Scripts/OpenPdf_01.ps1",
     "_IO_/OpenPdf_01.ps1",
