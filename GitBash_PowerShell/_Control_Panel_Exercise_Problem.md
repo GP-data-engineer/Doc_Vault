@@ -2,7 +2,7 @@
 title: Sterownik zadań (PS/Py)
 Chapter: 8
 name_x: 8
-name_y: 1
+name_y: 2
 name_z: 3
 mode: Problem
 script_ps1: New_Item_ExerciseOrTest.ps1
@@ -113,11 +113,28 @@ cd C:\GitHub\Repo\Introduction-to-Algorithms-clrs-exercises
 ---
 ### Prompt dla Problemu
 ```
-Przygotuj kod problemu z książki Wprowadzenie do Algorytmów CLRS ale w polskiej wersji językowej. Analizuj i przygotuj pełne działające implementacje algorytmów (np. pełny Quicksort, Insertion Sort, analiza T(n), symulacje głębokości drzewa itd.), wygeneruj kody do wszystkich zadań od razu. Przygotuj kod dla problemu przykład nazwy pliku Problem_8_1.py. Do każdego zadania przygotuj plik kod z testem przykład nazwy pliku test_problem_8_1.py. W każdym z kodów dodaj w języku angielskim komentarze na początku z opisem zadania czy testu i zwięzłe komentarze w środku kodu opisujące co robi kod. Twoj opis kodu po Polsku. Dla każdego kodu komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj opisy zadań po Angielsku i po Polsku. Testy bez dynamicznego importu, tylko z bezpośrednim import pytest, będę samodzielnie przesyłał do Repo na GitHub. Do kodów zadaniach dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter08. następnie nazwę zadania oraz import odpowiednich testów.
+Przygotuj kod problemu z książki Wprowadzenie do Algorytmów CLRS ale w polskiej wersji językowej. Każdy problem analizuj indywidulanie i przygotuj pełne działające implementacje algorytmów (przykładowo: pełny Quicksort, Insertion Sort, analiza T(n), symulacje głębokości drzewa itd.), wygeneruj kody do wszystkich zadań od razu. Przygotuj kod dla problemu przykład nazwy pliku Problem_8_2.py i Problem_8_3.py. Do każdego zadania przygotuj plik kod z testem przykład nazwy pliku test_problem_8_2.py i test_problem_8_3.py. 
+Na poczatku każdego z kodów dodaj zwięzłe komentarze po Angielsku i po Polsku co robi kod, w środku kodu dodaj komentarze opisujące co robi kod, zastosuj w kodach obu plików Problemu i testu Problemu.
+Pliki z kody testu bez dynamicznego importu, tylko z bezpośrednim import pytest, będę samodzielnie przesyłał do Repo na GitHub. Do kodów zadaniach dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter08. następnie nazwę zadania oraz import odpowiednich testów.
+
+src/ 
+	└── Chapter08/ 
+		└── Problem_8_1.py 
+tests/ 
+	└── Chapter08/ 
+		└── test_problem_8_1.py 
+powyżej potwierdzenie struktury plików
 ```
 
 
 ### Prompt dla kilku Zadań
 ```
 Przygotuj kod do zadań z książki Wprowadzenie do Algorytmów CLRS ale w polskiej wersji językowej. Analizuj i przygotuj pełne działające implementacje algorytmów (np. pełny Quicksort, Insertion Sort, analiza T(n), symulacje głębokości drzewa itd.), wygeneruj kody do wszystkich zadań od razu. Przygotuj kody do wszytkich zadań, nazwy wg schematu Exercise_8_4_4.py itd. do wszystkich zadań aż do Exercise_8_4_5.py oraz przygotuj do każdego zadania kody do testów test_exercise_8_4_4.py itd. do wszystkich zadań, aż do test_exercise_8_4_5.py. Wyświetla odpowiedzi w parach tj. zdanie i test do zdania. Dla każdego kodu komentarze na początku i zwięzłe komentarze w środku kodu opisujące co robi kod, w kodach obu plików przygotuj opisy zadań po Angielsku i po Polsku. Testy bez dynamicznego importu, tylko z bezpośrednim import pytest, będę samodzielnie przesyłał do Repo na GitHub. Do kodów zadaniach dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji from src.Chapter08. następnie nazwę zadania oraz import odpowiednich testów.
+src/
+	└── Chapter08/
+		└── Exercise_8_4_5.py
+tests/
+	└── Chapter08/
+		└── test_exercise_8_4_5.py
+powyżej potwierdzenie struktury plików
 ```
