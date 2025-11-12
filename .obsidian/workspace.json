@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+                "file": "_IO_/muzyczka.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wprowadzenie_do_Algorytmow_2012"
+              "title": "muzyczka"
             }
           }
         ]
@@ -180,26 +180,31 @@
       "command-palette:Otwórz listę poleceń": false,
       "bases:Stwórz nową bazę danych": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "markdown-importer:Otwórz importer Markdown": false
     }
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
-    "GitBash_PowerShell/_Control_Panel_Exercise_Problem.md",
+    "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
+    "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
+    "README.md",
+    "Rust/_The Rust Standard Library.md",
+    "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
+    "HTML/_info.md",
+    "_IO_/muzyczka.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+    "_IO_/_Control_Panel_Exercise_Problem.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/ProGit.pdf",
     "GitBash_PowerShell/Docker.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
-    "Rust/_The Rust Standard Library.md",
     "Rust",
     "_IO_/_IO_.md",
     "_IO_/Książki.md",
     "_IO_/Obsidian.md",
     "GitBash_PowerShell/Makrdown_tips.md",
-    "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
-    "HTML/_info.md",
     "GitBash_PowerShell/Test_001.md",
     "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012 — kopia.md",
@@ -212,9 +217,6 @@
     "GitBash_PowerShell/Control_Panel_01.md",
     "GitBash_PowerShell/progit.pdf",
     "Scripts/New_Item_ExerciseOrTest.ps1",
-    "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
-    "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
-    "README.md",
     "GitBash_PowerShell/CMD.md",
     "Bez nazwy.canvas",
     "2025-09-12.md",
