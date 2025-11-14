@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/muzyczka.md",
+                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "muzyczka"
+              "title": "Wprowadzenie_do_Algorytmow_2012"
+            }
+          },
+          {
+            "id": "ec75568b5f576270",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Informacje o wersji 1.10.3"
             }
           }
         ]
@@ -186,13 +198,13 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "_IO_/muzyczka.md",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
     "README.md",
     "Rust/_The Rust Standard Library.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "HTML/_info.md",
-    "_IO_/muzyczka.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/_Control_Panel_Exercise_Problem.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
