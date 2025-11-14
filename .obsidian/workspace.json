@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+                "file": "_IO_/_Control_Panel_Exercise_Problem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wprowadzenie_do_Algorytmow_2012"
+              "title": "_Control_Panel_Exercise_Problem"
             }
           },
           {
@@ -198,6 +198,8 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
+    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/muzyczka.md",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
@@ -205,12 +207,10 @@
     "Rust/_The Rust Standard Library.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "HTML/_info.md",
-    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/_Control_Panel_Exercise_Problem.md",
     "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/ProGit.pdf",
     "GitBash_PowerShell/Docker.md",
-    "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
     "Rust",
     "_IO_/_IO_.md",

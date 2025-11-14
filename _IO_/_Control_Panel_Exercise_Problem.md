@@ -2,7 +2,7 @@
 title: Sterownik zadań (PS/Py)
 Chapter: 8
 name_x: 8
-name_y: 5
+name_y: 6
 name_z: 3
 mode: Problem
 script_ps1: New_Item_ExerciseOrTest.ps1
