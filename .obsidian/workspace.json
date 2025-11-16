@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "_IO_/_Control_Panel_Exercise_Problem.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -198,9 +198,11 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
-    "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/_Control_Panel_Exercise_Problem.md",
+    "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
+    "T/To_.md",
+    "T",
     "_IO_/muzyczka.md",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
@@ -228,7 +230,6 @@
     "HTML",
     "GitBash_PowerShell/Control_Panel_01.md",
     "GitBash_PowerShell/progit.pdf",
-    "Scripts/New_Item_ExerciseOrTest.ps1",
     "GitBash_PowerShell/CMD.md",
     "Bez nazwy.canvas",
     "2025-09-12.md",
