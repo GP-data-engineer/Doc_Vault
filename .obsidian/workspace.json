@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "_Control_Panel_Exercise_Problem"
             }
-          },
-          {
-            "id": "ec75568b5f576270",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.3"
-              },
-              "icon": "lucide-book-up",
-              "title": "Informacje o wersji 1.10.3"
-            }
           }
         ]
       }
@@ -198,18 +186,19 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
-    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
-    "_IO_/_Control_Panel_Exercise_Problem.md",
-    "!_PDUE - ABPEF/BiC/DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY.md",
+    "_IO_/Książki.md",
+    "README.md",
+    "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
+    "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "T/To_.md",
+    "!_PDUE - ABPEF/BiC/DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY.md",
+    "_IO_/_Control_Panel_Exercise_Problem.md",
+    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "!_PDUE - ABPEF/BiC",
     "!_PDUE - ABPEF",
-    "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
     "T",
     "_IO_/muzyczka.md",
-    "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
-    "README.md",
     "Rust/_The Rust Standard Library.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "HTML/_info.md",
@@ -219,7 +208,6 @@
     "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
     "Rust",
     "_IO_/_IO_.md",
-    "_IO_/Książki.md",
     "_IO_/Obsidian.md",
     "GitBash_PowerShell/Makrdown_tips.md",
     "GitBash_PowerShell/Test_001.md",
