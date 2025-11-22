@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/_Control_Panel_Exercise_Problem.md",
-                "mode": "preview",
+                "file": "!_PDUE - ABPEF/BiC/Polityka Reagowania na Incydenty Bezpieczeństwa.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Control_Panel_Exercise_Problem"
+              "title": "Polityka Reagowania na Incydenty Bezpieczeństwa"
             }
           }
         ]
@@ -186,14 +186,18 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "!_PDUE - ABPEF/BiC/Patenty.md",
+    "!_PDUE - ABPEF/BiC/Polityka Reagowania na Incydenty Bezpieczeństwa.md",
+    "!_PDUE - ABPEF/BiC/Mapa myśli biznesu.md",
+    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+    "Bez nazwy",
+    "_IO_/_Control_Panel_Exercise_Problem.md",
     "_IO_/Książki.md",
     "README.md",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
     "T/To_.md",
     "!_PDUE - ABPEF/BiC/DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY.md",
-    "_IO_/_Control_Panel_Exercise_Problem.md",
-    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "!_PDUE - ABPEF/BiC",
     "!_PDUE - ABPEF",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
@@ -217,11 +221,7 @@
     "_IO_/OpenPdf_01.ps1",
     "_IO_/OpenPdf.ps1",
     "Scripts/OpenPdf.ps1",
-    "Scripts/Nowy Dokument tekstowy.txt",
     "GitBash_PowerShell/Control_Panel_01.md",
-    "GitBash_PowerShell/CMD.md",
-    "Bez nazwy.canvas",
-    "2025-09-12.md",
-    "Witaj.md"
+    "Bez nazwy.canvas"
   ]
 }
