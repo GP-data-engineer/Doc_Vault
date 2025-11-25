@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "!_PDUE - ABPEF/PwDGIiAWO/_Notatki.md",
+                "file": "APCOA/Wezwanie_do_zapłaty.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Notatki"
+              "title": "Wezwanie_do_zapłaty"
             }
           }
         ]
@@ -186,11 +186,14 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
+    "T/To_.md",
+    "APCOA/Wezwanie_do_zapłaty.md",
+    "APCOA",
+    "!_PDUE - ABPEF/PwDGIiAWO/_Notatki.md",
     "!_PDUE - ABPEF/PwDGIiAWO/(GIIF) – Generalny Inspektor Informacji Finansowej.md",
     "!_PDUE - ABPEF/PwDGIiAWO/(JPK) Weryfikacja – krótkie wyjaśnienie.md",
     "!_PDUE - ABPEF/PwDGIiAWO/(OLAF) Europejski Urząd ds. Zwalczania Nadużyć Finansowych.md",
     "!_PDUE - ABPEF/PwDGIiAWO/(AML) Ustawa o przeciwdziałaniu praniu pieniędzy.md",
-    "!_PDUE - ABPEF/PwDGIiAWO/_Notatki.md",
     "!_PDUE - ABPEF/PwDGIiAWO/_Ważne akty prawne i regulacje oprócz AML.md",
     "!_PDUE - ABPEF/BiC/DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY.md",
     "_IO_/Obsidian.md",
@@ -201,13 +204,11 @@
     "!_PDUE - ABPEF/BiC/Polityka Reagowania na Incydenty Bezpieczeństwa.md",
     "!_PDUE - ABPEF/BiC/Mapa myśli biznesu.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
-    "Bez nazwy",
     "_IO_/_Control_Panel_Exercise_Problem.md",
     "_IO_/Książki.md",
     "README.md",
     "Machinery Directive and Risk Assessment Methods – Sources and Standards_en.md",
     "Dyrektywa Maszynowa oraz Metody Oceny Ryzyka – Źródła i Normy_pl.md",
-    "T/To_.md",
     "!_PDUE - ABPEF/BiC",
     "!_PDUE - ABPEF",
     "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
@@ -216,7 +217,6 @@
     "Rust/_The Rust Standard Library.md",
     "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
     "HTML/_info.md",
-    "GitBash_PowerShell/Ściąga najczęściej używanych komend w PowerShell i Git Bash.md",
     "GitBash_PowerShell/ProGit.pdf",
     "Rust",
     "Scripts/OpenPdf_01.ps1",
