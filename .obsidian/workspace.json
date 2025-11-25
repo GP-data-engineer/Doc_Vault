@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APCOA/Wezwanie_do_zapłaty.md",
+                "file": "!_PDUE - ABPEF/BiC/DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wezwanie_do_zapłaty"
+              "title": "DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 455.5
+    "width": 458.5
   },
   "right": {
     "id": "5f872fe8410219d7",
@@ -186,8 +186,13 @@
   },
   "active": "ea22e1d9c065538a",
   "lastOpenFiles": [
-    "T/To_.md",
+    "!_PDUE - ABPEF/BiC/Dyrektywa_NIS2.md",
+    "!_PDUE - ABPEF/BiC/DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY.md",
+    "!_PDUE - ABPEF/BiC/Mapa myśli biznesu.md",
+    "!_PDUE - ABPEF/BiC/Patenty.md",
+    "!_PDUE - ABPEF/BiC/Polityka Reagowania na Incydenty Bezpieczeństwa.md",
     "APCOA/Wezwanie_do_zapłaty.md",
+    "T/To_.md",
     "APCOA",
     "!_PDUE - ABPEF/PwDGIiAWO/_Notatki.md",
     "!_PDUE - ABPEF/PwDGIiAWO/(GIIF) – Generalny Inspektor Informacji Finansowej.md",
@@ -195,14 +200,9 @@
     "!_PDUE - ABPEF/PwDGIiAWO/(OLAF) Europejski Urząd ds. Zwalczania Nadużyć Finansowych.md",
     "!_PDUE - ABPEF/PwDGIiAWO/(AML) Ustawa o przeciwdziałaniu praniu pieniędzy.md",
     "!_PDUE - ABPEF/PwDGIiAWO/_Ważne akty prawne i regulacje oprócz AML.md",
-    "!_PDUE - ABPEF/BiC/DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY.md",
     "_IO_/Obsidian.md",
-    "!_PDUE - ABPEF/BiC/Patenty.md",
     "!_PDUE - ABPEF/PwDGIiAWO/(PEP) Analiza ryzyka powiązań.md",
-    "!_PDUE - ABPEF/BiC/Dyrektywa_NIS2.md",
     "!_PDUE - ABPEF/PwDGIiAWO",
-    "!_PDUE - ABPEF/BiC/Polityka Reagowania na Incydenty Bezpieczeństwa.md",
-    "!_PDUE - ABPEF/BiC/Mapa myśli biznesu.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/_Control_Panel_Exercise_Problem.md",
     "_IO_/Książki.md",

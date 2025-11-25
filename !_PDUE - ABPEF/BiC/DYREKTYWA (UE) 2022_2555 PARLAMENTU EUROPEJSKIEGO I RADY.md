@@ -1,10 +1,10 @@
 Ten tekst ma wyłącznie służącą narzędziu dokumentacji i nie ma skutku prawnego. Instytucje Unii nie biorą na siebie odpowiedzialności za jego treść. Autentyczne wersje odpowiednich aktów, wraz z ich preambułami, to te opublikowane w Dzienniku Urzędowym Unii Europejskiej i dostępne w EUR-Lex. Te oficjalne teksty są bezpośrednio dostępne za pośrednictwem linków zamieszczonych w tym dokumencie
 
-|   |   |
-|---|---|
-|►B [](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#B-1)|DYREKTYWA (UE) 2022/2555 PARLAMENTU EUROPEJSKIEGO I RADY<br><br>z 14 grudnia 2022<br><br>o środki na rzecz wysokiego wspólnego poziomu cyberbezpieczeństwa w całej Unii, nowelizację Rozporządzenia (UE) nr 910/2014 oraz Dyrektywę (UE) 2018/1972 oraz uchylenie dyrektywy (UE) 2016/1148 (Dyrektywa NIS 2)<br><br>[(Tekst o znaczeniu dla EEA)](https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=celex:32022L2555 "32022L2555")<br><br>(OJ L 333 z 27.12.2022, s. 80)|
+|                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ►B [](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#B-1) | DYREKTYWA (UE) 2022/2555 PARLAMENTU EUROPEJSKIEGO I RADY<br><br>z 14 grudnia 2022<br><br>o środki na rzecz wysokiego wspólnego poziomu cyberbezpieczeństwa w całej Unii, nowelizację Rozporządzenia (UE) nr 910/2014 oraz Dyrektywę (UE) 2018/1972 oraz uchylenie dyrektywy (UE) 2016/1148 (Dyrektywa NIS 2)<br><br>[(Tekst o znaczeniu dla EEA)](https://eur-lex.europa.eu/legal-content/EN/AUTO/?uri=celex:32022L2555 "32022L2555")<br><br>(OJ L 333 z 27.12.2022, s. 80) |
 
-  
+
 
 Poprawione przez:
 
