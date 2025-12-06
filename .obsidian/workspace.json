@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/muzyczka.md",
+                "file": "_IO_/_Control_Panel_Exercise_Problem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "muzyczka"
+              "title": "_Control_Panel_Exercise_Problem"
             }
           }
         ]
@@ -186,8 +186,8 @@
   },
   "active": "345c671aa3c65e00",
   "lastOpenFiles": [
-    "_IO_/_Control_Panel_Exercise_Problem.md",
     "_IO_/muzyczka.md",
+    "_IO_/_Control_Panel_Exercise_Problem.md",
     "_IO_/Obsidian.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
