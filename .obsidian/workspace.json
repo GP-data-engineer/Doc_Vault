@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/_Control_Panel_Exercise_Problem.md",
+                "file": "!_PDUE - ABPEF/ZWzFB/Pytania na egzamin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Control_Panel_Exercise_Problem"
+              "title": "Pytania na egzamin"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 458.5
+    "width": 249.5
   },
   "right": {
     "id": "5f872fe8410219d7",
@@ -199,15 +198,32 @@
       "markdown-importer:Otwórz importer Markdown": false
     }
   },
-  "active": "887a49c923144385",
+  "active": "345c671aa3c65e00",
   "lastOpenFiles": [
+    "!_PDUE - ABPEF/ZWzFB/Pytania na egzamin.md",
+    "!_PDUE - ABPEF/ZWzFB/Ćwiczenie.md",
+    "!_PDUE - ABPEF/ZWzFB/_wykład.md",
+    "!_PDUE - ABPEF/PAPDG/Podstawowe Pojęcia z Prawa Gospodarczego.md",
+    "!_PDUE - ABPEF/ZWzFB",
+    "!_PDUE - ABPEF/PAPDG/_6_2025.12.20_Normy..md",
+    "!_PDUE - ABPEF/PAPDG/_6_2025.12.20_Umowy.md",
+    "!_PDUE - ABPEF/PAPDG/_2_2025.12.20_normy_prawne.md",
+    "!_PDUE - ABPEF/PAPDG/Bez nazwy",
+    "!_PDUE - ABPEF/PAPDG/_6_2025.12.20_odpowiedzialność.md",
+    "!_PDUE - ABPEF/PAPDG/_5_2025.12.20_Pełnomocnictwo.md",
+    "!_PDUE - ABPEF/PAPDG/_3_2025.12.20.md",
+    "!_PDUE - ABPEF/PAPDG/_1_2025.12.20_przepisy_prawne_vs_normyprawne.md",
+    "!_PDUE - ABPEF/PAPDG/_4_2025.12.20_Swoboda przedsiębiorczości.md",
+    "!_PDUE - ABPEF/PAPDG/Polska Klasyfikacja Działalności.md",
+    "!_PDUE - ABPEF/PAPDG/ćwiczenie.md",
+    "_IO_/_Naz_ar.md",
+    "!_PDUE - ABPEF/PAPDG",
     "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
-    "_IO_/_IO_.md",
     "_IO_/_Control_Panel_Exercise_Problem.md",
+    "_IO_/_IO_.md",
     "WOT/T57 HEAVY.md",
     "WOT",
     "_IO_/Excel.md",
-    "_IO_/_Naz_ar.md",
     "_IO_/Książki.md",
     "_IO_/muzyczka.md",
     "_IO_/Obsidian.md",
@@ -216,26 +232,10 @@
     "!_PDUE - ABPEF/UiR/_notatki.md",
     "!_PDUE - ABPEF/UiR/Bez nazwy",
     "!_PDUE - ABPEF/UiR",
-    "!_PDUE - ABPEF/PwDGIiAWO/(JPK) Weryfikacja – krótkie wyjaśnienie.md",
-    "!_PDUE - ABPEF/PwDGIiAWO/(GIIF) – Generalny Inspektor Informacji Finansowej.md",
-    "!_PDUE - ABPEF/PwDGIiAWO/(AML) Ustawa o przeciwdziałaniu praniu pieniędzy.md",
-    "!_PDUE - ABPEF/PwDGIiAWO/_Ważne akty prawne i regulacje oprócz AML.md",
-    "!_PDUE - ABPEF/PwDGIiAWO/_Notatki.md",
     "GitBash_PowerShell/ProGit.pdf",
-    "GitBash_PowerShell/Makrdown_tips.md",
-    "GitBash_PowerShell/Git – menu programów i ich zastosowanie.md",
-    "GitBash_PowerShell/Docker.md",
-    "GitBash_PowerShell/Co wybrać na start PowerShell vs Git Bash.md",
-    "GitBash_PowerShell/Test_001.md",
-    "PS1/Sprawdź_VC_Runtimes_ps1.md",
-    "PS1/New_Item_ExerciseOrTest.ps1 – Quick Guide.md",
-    "!_PDUE - ABPEF/BiC/DYREKTYWA (UE) 2022_2555 PARLAMENTU EUROPEJSKIEGO I RADY.md",
     "APCOA",
     "!_PDUE - ABPEF/PwDGIiAWO",
     "!_PDUE - ABPEF/BiC",
-    "!_PDUE - ABPEF",
-    "T",
-    "Rust",
     "Bez nazwy.canvas"
   ]
 }
