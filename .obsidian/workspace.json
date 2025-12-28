@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
+                "file": "_IO_/muzyczka.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wprowadzenie_do_Algorytmow_2012"
+              "title": "muzyczka"
             }
           },
           {
@@ -200,12 +200,14 @@
   },
   "active": "345c671aa3c65e00",
   "lastOpenFiles": [
-    "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
-    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
-    "_IO_/_Naz_ar.md",
+    "WOT/zarabianie kredytów.md",
+    "WOT/T57 HEAVY.md",
     "_IO_/_Control_Panel_Exercise_Problem.md",
-    "_IO_/_IO_.md",
+    "_IO_/Wprowadzenie_do_Algorytmow_2012.md",
     "!_PDUE - ABPEF/ZWzFB/Pytania na egzamin.md",
+    "_IO_/Wprowadzenie_do_Algorytmow_2012_z_zapisem.md",
+    "_IO_/_Naz_ar.md",
+    "_IO_/_IO_.md",
     "!_PDUE - ABPEF/ZWzFB/Ćwiczenie.md",
     "!_PDUE - ABPEF/ZWzFB/_wykład.md",
     "!_PDUE - ABPEF/PAPDG/Podstawowe Pojęcia z Prawa Gospodarczego.md",
@@ -222,14 +224,12 @@
     "!_PDUE - ABPEF/PAPDG/Polska Klasyfikacja Działalności.md",
     "!_PDUE - ABPEF/PAPDG/ćwiczenie.md",
     "!_PDUE - ABPEF/PAPDG",
-    "WOT/T57 HEAVY.md",
     "WOT",
     "_IO_/Excel.md",
     "_IO_/Książki.md",
     "_IO_/muzyczka.md",
     "_IO_/Obsidian.md",
     "!_PDUE - ABPEF/UiR/_ważne akry prawne.md",
-    "!_PDUE - ABPEF/UiR/_notatki.md",
     "!_PDUE - ABPEF/UiR/Bez nazwy",
     "!_PDUE - ABPEF/UiR",
     "GitBash_PowerShell/ProGit.pdf",
