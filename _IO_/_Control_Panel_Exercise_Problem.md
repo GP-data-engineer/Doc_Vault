@@ -105,7 +105,7 @@ cd GitHub\Repo\Doc_Vault
 ```
 
 ```shell
-git rm -r --cached Witaj.md
+git rm -r --cached "_IO_/_Naz_ar.md"
 ```
 
 ```shell
