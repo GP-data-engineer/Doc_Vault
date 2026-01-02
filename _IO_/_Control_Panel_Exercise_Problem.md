@@ -105,7 +105,7 @@ cd GitHub\Repo\Doc_Vault
 ```
 
 ```shell
-git rm -r --cached T
+git rm -r --cached Witaj.md
 ```
 
 ```shell
