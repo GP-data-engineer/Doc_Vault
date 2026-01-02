@@ -105,7 +105,7 @@ cd GitHub\Repo\Doc_Vault
 ```
 
 ```shell
-git rm -r --cached .obsidian
+git rm -r --cached WOT
 ```
 
 ```shell
