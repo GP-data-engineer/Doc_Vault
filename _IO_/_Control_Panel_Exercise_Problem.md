@@ -105,7 +105,7 @@ cd GitHub\Repo\Doc_Vault
 ```
 
 ```shell
-git rm -r --cached APCOA
+git rm -r --cached .obsidian
 ```
 
 ```shell
