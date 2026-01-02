@@ -95,9 +95,7 @@ copyBtn.style.marginTop = "8px";
 box.appendChild(copyBtn);
 ```
 
-
 ---
-
 
 ```shell
 cd C:\
