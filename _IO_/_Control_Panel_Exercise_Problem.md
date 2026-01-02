@@ -105,7 +105,7 @@ cd GitHub\Repo\Doc_Vault
 ```
 
 ```shell
-git rm -r --cached !_PDUE - ABPEF
+git rm -r --cached APCOA
 ```
 
 ```shell
