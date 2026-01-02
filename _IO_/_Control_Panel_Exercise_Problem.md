@@ -102,12 +102,15 @@ box.appendChild(copyBtn);
 ```shell
 cd C:\
 cd GitHub\Repo\Doc_Vault
-
 ```
+
+```shell
+git rm -r --cached !_PDUE - ABPEF
+```
+
 ```shell
 cd C:\
 cd C:\GitHub\Repo\Introduction-to-Algorithms-clrs-exercises
-
 ```
 
 ---
