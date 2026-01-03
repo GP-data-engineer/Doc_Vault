@@ -1,8 +1,0 @@
-- Siła Nawyku - Charless Duhigg
-- Kreatywność S.A. - ED Catmull (Studio Pixar)
-- Szum - Daniekl Kahnemann
-- Safuta - Otwórz oczy
-- Safuta - Mit chorób nieuleczalnych i wielki biznes
-- Safuta - Mit chorób nieuleczalnych, powrót do raju utraconego 
-- Kuchnia NEO
-- 
