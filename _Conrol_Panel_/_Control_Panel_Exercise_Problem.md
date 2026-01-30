@@ -2,8 +2,8 @@
 title: Sterownik zadań (PS/Py)
 Chapter: 10
 name_x: 10
-name_y: 3
-name_z: 5
+name_y: 4
+name_z: 1
 mode: Exercise
 script_ps1: New_Item_ExerciseOrTest.ps1
 ---
@@ -132,30 +132,31 @@ powyżej potwierdzenie struktury plików
 ```
 Przygotuj kod do zadań z książki Wprowadzenie do Algorytmów CLRS ale w polskiej wersji językowej. Analizuj i przygotuj pełne działające implementacje algorytmów, wygeneruj kody do wszystkich zadań od razu. Przygotuj kody do wszytkich zadań, nazwy wg schematu 
 
-Exercise_10_2_1.py 
+Exercise_10_4_1.py 
 
 i do wszystkich zadań aż do 
 
-Exercise_10_2_7.py, 
+Exercise_10_4_6.py, 
 
 przygotuj do każdego zadania kody z testami 
 
-test_exercise_10_2_1.py 
+test_exercise_10_4_1.py 
 
 itd. do wszystkich zadań, aż do 
 
-test_exercise_10_2_7.py. 
+test_exercise_10_4_6.py. 
 
 Wyświetl odpowiedzi w parach tj. zdanie i test do zdania. Dla każdego pliku z kodem dodaj komentarze "#" na początku i zwięzłe komentarze "#" w środku kodu opisujące co robi kod, w kodach obu plików przygotuj opisy zadań po Angielsku i po Polsku. Testy bez dynamicznego importu, tylko z bezpośrednim import pytest, będę samodzielnie przesyłał do Repo na GitHub. Do kodów zadaniach dodaj sekcje if __name__ == "__main__" i wydrukuj na ekranie efekt działania programu. Kod testu musi zawierać w sekcji 
 
 from src.Chapter10, 
 
 następnie nazwę zadania oraz import odpowiednich testów.
+
 src/
 	└── Chapter08/
-		└── Exercise_10_2_1.py
+		└── Exercise_10_4_1.py
 tests/
 	└── Chapter08/
-		└── test_exercise_10_2_1.py
+		└── test_exercise_10_4_1.py
 powyżej potwierdzenie struktury plików
 ```
