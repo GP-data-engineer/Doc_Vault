@@ -2,7 +2,7 @@
 title: Wprowadzenie_do_Algorytmow_(2012)
 author: CLRS
 pdf_path: Q:/Algorytmy/Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
-Strona_PDF: 139
+Strona_PDF: 151
 ---
 
 ## 📑 Dokument
