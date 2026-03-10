@@ -1,9 +1,9 @@
 ---
 title: Sterownik zadań (PS/Py)
-Chapter: 11
-name_x: 11
-name_y: 4
-name_z: 3
+Chapter: 12
+name_x: 12
+name_y: 1
+name_z: 4
 
 mode: Exercise
 script_ps1: New_Item_ExerciseOrTest.ps1

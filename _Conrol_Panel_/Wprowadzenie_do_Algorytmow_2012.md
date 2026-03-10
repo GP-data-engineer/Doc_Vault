@@ -2,9 +2,8 @@
 title: Wprowadzenie_do_Algorytmow_(2012)
 author: CLRS
 pdf_path: Q:/Algorytmy/Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf
-Strona_PDF: 151
+Strona_PDF: 157
 ---
-
 ## 📑 Dokument
 
 ```dataviewjs
@@ -66,7 +65,6 @@ box.appendChild(btn);
 [Wprowadzenie_do_algorytmów_(2012)](file:///C:/Algorytmy/Wprowadzenie_do_algorytmów/Wprowadzenie_do_algorytmów_(2012).pdf)
 
 ---
-
 
 ```shell
 powershell -ExecutionPolicy Bypass -File & "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /A "page=77" "C:\Algorytmy\Wprowadzenie_do_algorytmów\Wprowadzenie_do_algorytmów_(2012).pdf"
