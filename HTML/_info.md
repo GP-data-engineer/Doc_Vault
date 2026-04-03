@@ -5,8 +5,7 @@
 so please feel free to email
 me should you have questions about explanations.
 
-Also I
-would appreciate knowing about any corrections or typos and, in particular, if you
+Also I would appreciate knowing about any corrections or typos and, in particular, if you
 find an explanation hard to follow.
 
 My goal in writing this was to provide a useful
