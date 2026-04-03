@@ -3,9 +3,11 @@
 
 ```
 so please feel free to email
-me (daninman@umich.edu) should you have questions about explanations.
+me should you have questions about explanations.
 
-
+Also I
+would appreciate knowing about any corrections or typos and, in particular, if you
+find an explanation hard to follow.
 
  { .green }```
 
