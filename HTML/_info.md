@@ -9,5 +9,8 @@ Also I
 would appreciate knowing about any corrections or typos and, in particular, if you
 find an explanation hard to follow.
 
+My goal in writing this was to provide a useful
+resource for...
+
  { .green }```
 
