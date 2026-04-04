@@ -1,0 +1,418 @@
+Inman - Engineering Vibration 4th Edition 
+
+This book is intended for use in a first course in vibrations or structural dynamics for undergraduates in mechanical, civil, and aerospace engineering or engineering mechanics. 
+The text contains the topics normally found in such coursesin accredited engineering departments as set out initially by Den Hartog and refined by Thompson. 
+In addition, topics on design, measurement, and computation are addressed.
+
+Książka ta jest przeznaczona do wykorzystania na pierwszym kursie z zakresu drgań lub dynamiki konstrukcji dla studentów studiów inżynierskich na kierunkach takich jak inżynieria mechaniczna, inżynieria lądowa, inżynieria lotnicza lub mechanika inżynierska.
+Tekst obejmuje zagadnienia typowo realizowane na tego rodzaju kursach w akredytowanych wydziałach inżynierskich, pierwotnie określone przez Jacob Pieter Den Hartog i rozwinięte przez William T. Thompson.
+Ponadto uwzględniono również zagadnienia związane z projektowaniem, pomiarami oraz obliczeniami numerycznymi.
+
+
+Pedagogy, 
+
+Originally, a major difference between the pedagogy of this text and competing texts is the use of high level computing codes. 
+Since then, the other authors of vibrations texts have started to embrace use of these codes. 
+While the book is written so that the codes do not have to be used, I strongly encourage their use. 
+These codes (Mathcad®, Matlab®, and Mathematica®) are very easy to use, at the level of a programmable calculator, and hence do not require any prerequisite courses or training. 
+
+Początkowo istotną różnicą między podejściem dydaktycznym tej książki a innymi podręcznikami było wykorzystanie zaawansowanych narzędzi obliczeniowych. 
+Z czasem także inni autorzy podręczników z zakresu drgań zaczęli stosować tego typu narzędzia. 
+Chociaż książka została napisana w taki sposób, że korzystanie z nich nie jest konieczne, zdecydowanie zachęcam do ich używania. 
+Te narzędzia (Mathcad, MATLAB oraz Mathematica) są bardzo łatwe w obsłudze na poziomie programowalnego kalkulatora i dlatego nie wymagają żadnych wcześniejszych kursów ani specjalistycznego przygotowania. 
+---
+
+Of course, it is easier if the students have used one or the other of the codes before, but it is not necessary. 
+In fact, the Matlab® codes can be copied directly and will run as listed. 
+The use of these codes greatly enhances the student’s understanding of the fundamentals of vibration. 
+Just as a picture is worth a thousand words, a numerical simulation or plot can enable a completely dynamic understanding of vibration phenomena. 
+Computer calculations and simulations are presented at the end of each of the first four chapters. 
+After that, many of the problems assume that codes are second nature in solving vibration problems. 
+
+Oczywiście, łatwiej jest, jeśli studenci mieli już wcześniej styczność z którymś z tych narzędzi, ale nie jest to konieczne. 
+W rzeczywistości kody w MATLAB® można bezpośrednio skopiować i uruchomić w przedstawionej formie. 
+Wykorzystanie tych narzędzi znacząco pogłębia zrozumienie podstaw drgań przez studenta. 
+Podobnie jak obraz jest wart tysiąca słów, tak symulacja numeryczna lub wykres umożliwia uzyskanie w pełni dynamicznego zrozumienia zjawisk drganiowych. 
+Obliczenia komputerowe i symulacje przedstawiono na końcu każdego z pierwszych czterech rozdziałów. 
+W dalszej części książki wiele zadań zakłada, że korzystanie z tych narzędzi jest już naturalnym elementem rozwiązywania problemów z zakresu drgań. 
+---
+
+Another unique feature of this text is the use of “windows,” which are distributed throughout the book and provide reminders of essential information pertinent to the text material at hand. 
+The windows are placed in the text at points where such prior information is required. 
+The windows are also used to summarize essential information. 
+The book attempts to make strong connections to previous course work in a typical engineering curriculum. 
+In particular, reference is made to calculus, differential equations, statics, dynamics, and strength of materials course work. 
+
+Kolejną unikalną cechą tej książki jest zastosowanie tzw. „okien” (windows), rozmieszczonych w całym tekście, które zawierają przypomnienia kluczowych informacji istotnych dla aktualnie omawianego materiału. 
+Okna te umieszczono w miejscach, gdzie wymagana jest znajomość wcześniejszych zagadnień. 
+Służą one również do podsumowania najważniejszych informacji. 
+Książka stara się także silnie nawiązywać do wcześniej realizowanych przedmiotów w typowym programie studiów inżynierskich. 
+W szczególności odwołuje się do takich dziedzin jak rachunek różniczkowy i całkowy, równania różniczkowe, statyka, dynamika oraz wytrzymałość materiałów. 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Most of the changes made in this edition are the result of comments sent to me by students and faculty who have used the 3rd edition. 
+These changes consist of improved clarity in explanations, the addition of some new examples that clarify concepts, and enhanced problem statements. 
+In addition, some text material deemed outdated and not useful has been removed. 
+The computer codes have also been updated. 
+However, software companies update their codes much faster than the publishers can update their texts, so users should consult the web for updates in syntax, commands, etc. 
+
+Większość zmian wprowadzonych w tym wydaniu jest wynikiem uwag przekazanych przez studentów oraz wykładowców, którzy korzystali z trzeciego wydania. 
+Zmiany te obejmują poprawę przejrzystości wyjaśnień, dodanie nowych przykładów ilustrujących omawiane koncepcje oraz ulepszenie treści zadań. 
+Ponadto usunięto fragmenty tekstu uznane za przestarzałe i mało użyteczne. 
+Zaktualizowano również kody obliczeniowe.
+Należy jednak zauważyć, że firmy tworzące oprogramowanie aktualizują swoje narzędzia znacznie szybciej, niż wydawnictwa są w stanie aktualizować podręczniki, dlatego użytkownicy powinni sprawdzać aktualizacje składni, poleceń itp. w zasobach internetowych.
+---
+One consistent request from students has been not to reference data appearing previously in other examples or problems. 
+This has been addressed by providing all of the relevant data in the problem statements. 
+Three undergraduate engineering students (one in Engineering Mechanics, one in Biological Systems Engineering, and one in Mechanical Engineering) who had the prerequisite courses, but had not yet had courses in vibrations, read the manuscript for clarity. 
+Their suggestions prompted us to make the following changes in order to improve readability from the student’s perspective:
+ 
+Jedną z powtarzających się próśb studentów było unikanie odwołań do danych pojawiających się wcześniej w innych przykładach lub zadaniach. 
+To zostało uwzględnione poprzez zamieszczenie wszystkich niezbędnych danych bezpośrednio w treści zadań.
+Trzech studentów studiów inżynierskich (z kierunków: Mechanika Inżynierska, Inżynieria Systemów Biologicznych oraz Inżynieria Mechaniczna), którzy ukończyli wymagane kursy wstępne, lecz nie mieli jeszcze zajęć z drgań, przeanalizowało manuskrypt pod kątem jego przejrzystości. 
+Ich sugestie doprowadziły do wprowadzenia następujących zmian, mających na celu poprawę czytelności z perspektywy studenta:
+---
+
+Improved clarity in explanations added in 47 different passages in the text.
+In addition, two new windows have been added. Twelve new examples that clarify concepts and enhanced problem statements have been added, and ten examples have been modified to improve clarity.
+Text material deemed outdated and not useful has been removed. Two sections have been dropped and two sections have been completely rewritten.
+All computer codes have been updated to agree with the latest syntax changes made in Matlab, Mathematica, and Mathcad.
+Fifty-four new problems have been added and 94 problems have been modified for clarity and numerical changes.
+Eight new figures have been added and three previous figures have been modified.
+Four new equations have been added.
+
+Poprawiono przejrzystość wyjaśnień w 47 fragmentach tekstu; dodatkowo dodano dwa nowe „okna” (sekcje przypominające kluczowe informacje).
+Dodano dwanaście nowych przykładów objaśniających koncepcje oraz ulepszone zadania; dziesięć przykładów zmodyfikowano w celu poprawy ich przejrzystości.
+Usunięto fragmenty tekstu uznane za przestarzałe i nieprzydatne; dwa rozdziały (sekcje) usunięto, a dwa całkowicie przepisano.
+Wszystkie kody obliczeniowe zaktualizowano zgodnie z najnowszymi zmianami składni w MATLAB, Mathematica oraz Mathcad.
+Dodano 54 nowe zadania, a 94 zmodyfikowano w celu poprawy ich przejrzystości oraz aktualizacji danych liczbowych.
+Dodano osiem nowych rysunków, a trzy wcześniejsze zmodyfikowano.
+Dodano cztery nowe równania.
+---
+
+Chapter 1: Changes include new examples, equations, and problems. 
+New textual explanations have been added and/or modified to improve clarity based on student suggestions.
+Modifications have been made to problems to make the problem statement clear by not referring to data from previous problems or examples. 
+All of the codes have been updated to current syntax, and older, obsolete commands have been replaced.
+
+Chapter 2: New examples and figures have been added, while previous examples and figures have been modified for clarity. 
+New textual explanations have also been added and/or modified. 
+New problems have been added and older problems modified to make the problem statement clear by not referring to data from previous problems or examples. 
+All of the codes have been updated to current syntax, and older, obsolete commands have been replaced.
+
+Rozdział 1:
+Zmiany obejmują nowe przykłady, równania oraz zadania. Dodano i/lub zmodyfikowano objaśnienia tekstowe w celu poprawy przejrzystości, zgodnie z sugestiami studentów. 
+Zmodyfikowano również zadania, tak aby ich treść była w pełni zrozumiała bez odwoływania się do danych z wcześniejszych przykładów lub zadań. 
+Wszystkie kody zostały zaktualizowane do aktualnej składni, a przestarzałe polecenia zastąpiono nowymi.
+
+Rozdział 2:
+Dodano nowe przykłady i rysunki, a wcześniejsze zmodyfikowano w celu poprawy przejrzystości. Wprowadzono również nowe i/lub zmodyfikowane objaśnienia tekstowe. 
+Dodano nowe zadania, a starsze zmodyfikowano tak, aby ich treść była jednoznaczna i nie odwoływała się do danych z wcześniejszych przykładów lub zadań. 
+Wszystkie kody zostały zaktualizowane do aktualnej składni, a przestarzałe polecenia zastąpiono nowymi.
+---
+
+Rozdział 3:
+Dodano nowe przykłady i równania, a także nowe zadania. W szczególności rozszerzono wyjaśnienie pojęcia impulsu. 
+Ponadto wcześniejsze zadania zostały przepisane w celu poprawy ich przejrzystości i precyzji. 
+Wszystkie przykłady i zadania, które wcześniej odwoływały się do informacji pojawiających się wcześniej w tekście, zostały zmodyfikowane tak, aby ich treść była bardziej samodzielna i kompletna. 
+Wszystkie kody zostały zaktualizowane do aktualnej składni, a starsze, przestarzałe polecenia zostały zastąpione nowymi.
+
+Chapter 3: New examples and equations have been added, as well as new problems. 
+In particular, the explanation of impulse has been expanded. 
+In addition, previous problems have been rewritten for clarity and precision.
+All examples and problems that referred to prior information in the text have been modified to present a more self-contained statement. 
+All of the codes have been updated to current syntax, and older, obsolete commands have been replaced.
+---
+
+Rozdział 4:
+Oprócz dodania zupełnie nowego przykładu wiele przykładów zostało zmienionych i zmodyfikowanych w celu poprawy przejrzystości oraz uzupełnienia informacji. Dodano nowe „okno” (sekcję przypominającą) w celu wyjaśnienia zagadnień związanych z macierzami. Jeden rysunek został usunięty, a w jego miejsce dodano nowy. Dodano nowe zadania, a starsze zadania zmodyfikowano, aby wszystkie przykłady i problemy były bardziej samodzielne. Wszystkie kody zaktualizowano do aktualnej składni, a przestarzałe polecenia zastąpiono nowymi.
+Kilka nowych wykresów pojawiających się w kodach zostało ponownie opracowanych, aby uwzględnić problemy wynikające z automatycznego doboru kroku czasowego w programach Mathematica oraz MATLAB, który okazuje się niedokładny przy stosowaniu funkcji osobliwych (singularity functions). Kilka wyjaśnień zostało także zmodyfikowanych zgodnie z sugestiami studentów.
+
+Chapter 4: Along with the addition of an entirely new example, many of the examples have been changed and modified for clarity and to include improved information. 
+A new window has been added to clarify matrix information. 
+A figure has been removed and a new figure added. 
+New problems have been added  and older problems have been modified with the goal of making all problems and
+examples more self-contained. All of the codes have been updated to current syntax, and older, obsolete commands have been replaced. 
+Several new plots intermixed in the codes have been redone to reflect issues with Mathematica and Matlab’s automated time step which proves to be inaccurate when using singularity functions. 
+Several explanations have been modified according to students’ suggestions.
+---
+
+Rozdział 5:
+Sekcja 5.1 została zmieniona, rysunek zastąpiony nowym, a przykład zmodyfikowany dla poprawy przejrzystości. 
+Zadania w dużej mierze pozostały takie same, jednak wiele z nich zostało zmienionych lub zmodyfikowanych poprzez wprowadzenie innych szczegółów oraz w celu uczynienia ich bardziej samodzielnymi.
+Sekcja 5.8 (Aktywne tłumienie drgań) oraz sekcja 5.9 (Praktyczne projektowanie izolacji drgań) zostały usunięte wraz z powiązanymi zadaniami, aby zrobić miejsce dla dodatkowych materiałów w wcześniejszych rozdziałach bez zwiększania objętości książki. 
+Zgodnie z ankietami użytkowników sekcje te zazwyczaj nie są omawiane podczas zajęć.
+
+Chapter 5: Section 5.1 has been changed, the figure replaced, and the example changed for clarity. 
+The problems are largely the same but many have been changed or modified with different details and to make the problems more self-contained.
+Section 5.8 (Active Vibration Suppression) and Section 5.9 (Practical Isolation Design) have been removed, along with the associated problems, to make room for added material in the earlier chapters without lengthening the book. 
+According to user surveys, these sections are not usually covered.
+---
+
+Rozdział 6:
+Sekcja 6.8 została przepisana w celu poprawy przejrzystości, a dodatkowo dodano „okno” podsumowujące analizę modalną odpowiedzi wymuszonej. 
+Dodano nowe zadania, a wiele starszych zadań zostało ponownie sformułowanych dla większej przejrzystości. 
+W kilku przykładach dodano dodatkowe szczegóły. 
+W tekście wprowadzono także liczne drobne uzupełnienia w celu poprawy jasności wyjaśnień.
+
+Chapter 6: Section 6.8 has been rewritten for clarity and a window has been added to summarize modal analysis of the forced response. 
+New problems have been added and many older problems restated for clarity. 
+Further details have beenadded to several examples. 
+A number of small additions have been made to the to the text for clarity.
+---
+
+Rozdziały 7 i 8:
+Rozdziały te nie zostały zmienione, poza drobnymi poprawkami i niewielkimi uzupełnieniami zaproponowanymi przez użytkowników.
+
+Chapters 7 and 8: These chapters were not changed, except to make minor corrections and additions as suggested by users.
+---
+
+Units
+This book uses SI units. 
+The 1st edition used a mixture of US Customary and SI, but at the insistence of the editor all units were changed to SI. 
+I have stayed with SI in this edition because of the increasing international arena that our engineering graduates compete in. 
+The engineering community is now completely global. 
+For instance, GE Corporate Research has more engineers in its research center in India than it does in the US. 
+Engineering in the US is in danger of becoming the ‘garment’ workers of the next decade if we do not recognize the global work place. 
+Our engineers need to work in SI to be competitive in this increasingly international work place.
+
+Jednostki
+
+W tej książce stosowany jest układ jednostek SI. 
+Pierwsze wydanie wykorzystywało mieszankę jednostek amerykańskich (US Customary) oraz SI, jednak na naleganie redaktora wszystkie jednostki zostały zmienione na SI. 
+W niniejszym wydaniu również pozostałem przy układzie SI, ze względu na coraz bardziej międzynarodowy charakter rynku, na którym konkurują nasi absolwenci kierunków inżynierskich.
+Społeczność inżynierska ma obecnie w pełni globalny charakter. 
+Na przykład General Electric (GE Corporate Research) zatrudnia więcej inżynierów w swoim centrum badawczym w India niż w Stanach Zjednoczonych.
+Inżynieria w USA stoi przed ryzykiem sprowadzenia do roli „robotników przemysłu odzieżowego” w nadchodzącej dekadzie, jeśli nie zostanie uwzględniony globalny charakter rynku pracy. 
+Nasi inżynierowie muszą posługiwać się układem SI, aby pozostać konkurencyjni w tym coraz bardziej międzynarodowym środowisku pracy.
+---
+
+Instructor Support
+This text comes with a bit of support. 
+In particular, MS PowerPoint presentations are available for each chapter along with some instructive movies. 
+The solutions manual is available in both MS Word and PDF format (sorry, instructors only).
+Sample tests are available. 
+The MS Word solutions manual can be cut and pasted into presentation slides, tests, or other class enhancements. 
+These resources can be found at www.pearsonhighered.com and will be updated often. 
+Please also email me at daninman@umich.edu with corrections, typos, questions, and suggestions.
+The book is reprinted often, and at each reprint I have the option to fix typos, so please report any you find to me, as others as well as I will appreciate it.
+
+Wsparcie dla prowadzącego (Instructor Support)
+
+Niniejszy podręcznik jest wyposażony w pewne materiały wspomagające. 
+W szczególności dla każdego rozdziału dostępne są prezentacje w MS PowerPoint, a także materiały wideo o charakterze dydaktycznym.
+Zbiór rozwiązań (solutions manual) jest dostępny zarówno w formacie MS Word, jak i PDF (niestety tylko dla prowadzących). 
+Dostępne są również przykładowe testy. 
+Wersję rozwiązań w formacie MS Word można kopiować i wklejać do slajdów prezentacji, testów lub innych materiałów dydaktycznych.
+Zasoby te można znaleźć na stronie wydawnictwa Pearson Education i są one regularnie aktualizowane.
+Autor prosi również o kontakt mailowy (daninman@umich.edu) w przypadku znalezienia błędów, literówek, pytań lub sugestii. 
+Książka jest często wznawiana, a przy każdym dodruku autor ma możliwość poprawienia błędów, dlatego zachęca do ich zgłaszania będzie to pomocne zarówno dla innych czytelników, jak i dla niego samego.
+---
+
+Wsparcie dla studentów (Student Support)
+Najlepszym źródłem pomocy w nauce tego materiału jest prowadzący zajęcia, ponieważ nie ma nic bardziej wartościowego dydaktycznie niż bezpośrednia wymiana zdań. 
+Jednak książka została napisana w możliwie największym stopniu z perspektywy studenta.
+Wielu studentów analizowało pierwotną wersję manuskryptu, a liczne zmiany w tekście są wynikiem ich sugestii podczas nauki z tego materiału. 
+Dlatego zachęcam do kontaktu mailowego (daninman@umich.edu) w przypadku pytań dotyczących wyjaśnień zawartych w książce.
+Autor będzie również wdzięczny za zgłaszanie poprawek i literówek, a w szczególności za informacje o fragmentach, które są trudne do zrozumienia. 
+Celem autora było stworzenie użytecznego źródła dla studentów uczących się drgań po raz pierwszy.
+
+Student Support
+The best place to get help in studying this material is from your instructor, as there is nothing more educational than a verbal exchange. 
+However, the book was written as much as possible from a student’s perspective. 
+Many students critiqued the original manuscript, and many of the changes in text have been the result of suggestions from students trying to learn from the material, so please feel free to email
+me (daninman@umich.edu) should you have questions about explanations.
+Also I would appreciate knowing about any corrections or typos and, in particular, if you find an explanation hard to follow. 
+My goal in writing this was to provide a useful resource for students learning vibration for the first time.
+---
+
+Acknowledgements
+The cover photo of the unmanned air vehicle is provided courtesy of General Atomics Aeronautical Systems, Inc., all rights reserved. 
+Each chapter starts with two photos of different systems that vibrate to remind the reader that the material in this text has broad application across numerous sectors of human activity. 
+These photographs were taken by friends, students, colleagues, relatives, and some by me.
+I am greatly appreciative of Robert Hargreaves (guitar), P. Timothy Wade (wind mill, Presidential helicopter), General Atomics (Predator), Roy Trifilio (bridge),
+Catherine Little (damper), Alex Pankonien (FEM graphic), and Jochen Faber of Liebherr Aerospace (landing gear). Alan Giles of General Atomics gave me an
+informative tour of their facilities which resulted in the photos of their products.
+
+Podziękowania (Acknowledgements)
+Zdjęcie na okładce bezzałogowego statku powietrznego zostało udostępnione dzięki uprzejmości General Atomics Aeronautical Systems, wszelkie prawa zastrzeżone. 
+Każdy rozdział rozpoczyna się od dwóch fotografii przedstawiających różne układy drgające, aby przypomnieć czytelnikowi, że materiał zawarty w tej książce ma szerokie zastosowanie w wielu obszarach działalności człowieka.
+Fotografie zostały wykonane przez przyjaciół, studentów, współpracowników, członków rodziny oraz częściowo przez samego autora. 
+Autor składa szczególne podziękowania dla: Roberta Hargreavesa (gitara), P. 
+Timothy’ego Wade’a (wiatrak, śmigłowiec prezydencki), General Atomics (Predator), Roya Trifilio (most), Catherine Little (tłumik drgań), 
+Alexa Pankoniena (grafika MES) oraz Jochena Fabera z Liebherr Aerospace (podwozie samolotu). 
+Alan Giles z General Atomics umożliwił autorowi szczegółowe zwiedzanie zakładów firmy, co zaowocowało wykonaniem zdjęć ich produktów.
+---
+
+Many colleagues and students have contributed to the revision of this text through suggestions and questions. 
+In particular, Daniel J. Inman, II; Kaitlyn DeLisi; Kevin Crowely; and Emily Armentrout provided many useful comments from the perspective of students reading the material for the first time. 
+Kaitlyn and Kevin checked all the computer codes by copying them out of the book to make sure they ran. 
+My former PhD students Ya Wang, Mana Afshari, and Amin Karami checked many of the new problems and examples. 
+Dr. Scott Larwood and the students in his vibrations class at the University of the Pacific sent many suggestions and corrections that helped give the book the perspective of a nonresearch insitution. 
+I have implemented many of their suggestions, and I believe the book’s explanations are much clearer due to their input. 
+Other professors using the book, Cetin Cetinkaya of Clarkson University, Mike Anderson of the University of Idaho,
+Joe Slater of Wright State University, Ronnie Pendersen of Aalborg University Esbjerg, Sondi Adhikari of the Universty of Wales, David Che of Geneva College,
+Tim Crippen of the University of Texas at Tyler, and Nejat Olgac of the University of Conneticut, have provided discussions via email that have led to improvements in the text, all of which are greatly appreciated. 
+I would like to thank the reviewers: Cetin Cetinkaya, Clarkson University; Dr. Nesrin Sarigul-Klijn, University of California–Davis; and David Che, Geneva College.
+
+Wielu współpracowników i studentów przyczyniło się do opracowania tego wydania poprzez swoje sugestie i pytania. 
+W szczególności Daniel J. Inman II, Kaitlyn DeLisi, Kevin Crowely oraz Emily Armentrout przekazali liczne cenne uwagi z perspektywy studentów zapoznających się z materiałem po raz pierwszy. 
+Kaitlyn i Kevin sprawdzili wszystkie kody obliczeniowe, przepisując je z książki, aby upewnić się, że działają poprawnie.
+Byli doktoranci autora — Ya Wang, Mana Afshari oraz Amin Karami — zweryfikowali wiele nowych zadań i przykładów. 
+Dr Scott Larwood oraz studenci jego kursu drgań na University of the Pacific przekazali liczne sugestie i poprawki, które pomogły nadać książce perspektywę uczelni o profilu nienaukowo-badawczym. 
+Wiele z tych uwag zostało wdrożonych i znacząco poprawiło przejrzystość wyjaśnień.
+Inni wykładowcy korzystający z tej książki — Cetin Cetinkaya z Clarkson University, Mike Anderson z University of Idaho, 
+Joe Slater z Wright State University, Ronnie Pendersen z Aalborg University Esbjerg, Sondi Adhikari z University of Wales, David Che z Geneva College, 
+Tim Crippen z University of Texas at Tyler oraz Nejat Olgac z University of Connecticut — prowadzili korespondencję mailową, która przyczyniła się do ulepszenia treści książki, za co autor jest bardzo wdzięczny.
+Autor składa również podziękowania recenzentom: Cetin Cetinkaya (Clarkson University), dr Nesrin Sarigul-Klijn (University of California–Davis) oraz David Che (Geneva College).
+---
+
+Many of my former PhD students who are now academics cotaught this course with me and also offered many suggestions. 
+Alper Erturk (Georgia Tech), Henry Sodano (University of Florida), Pablo Tarazaga (Virginia Tech), Onur Bilgen (Old Dominian University), Mike Seigler (University of Kentucky), and Armaghan Salehian (University of Waterloo) all contributed to clarity in this text for which I am grateful.
+I have been lucky to have wonderful PhD students to work with. I learned much from them.
+I would also like to thank Prof. Joseph Slater of Wright State for reviewing some of the new materials, for writing and managing the associated toolbox, and constantly sending suggestions. 
+Several colleagues from government labs and companies have also written with suggestions which have been very helpful from that perspective of practice.
+I have also had the good fortune of being sponsored by numerous companies and federal agencies over the last 32 years to study, design, test, and analyze a large variety of vibrating structures and machines. Without these projects, 
+I would not have been able to write this book nor revise it with the appreciation for the practice of vibration, which I hope permeates the text.
+Last, I wish to thank my family for moral support, a sense of purpose, and for putting up with my absence while writing.
+
+Wielu moich byłych doktorantów, którzy obecnie są pracownikami naukowymi, współprowadziło ze mną ten kurs oraz zgłosiło liczne cenne sugestie. Alper Erturk (Georgia Tech), Henry Sodano (University of Florida), Pablo Tarazaga (Virginia Tech), Onur Bilgen (Old Dominion University), Mike Seigler (University of Kentucky) oraz Armaghan Salehian (University of Waterloo) przyczynili się do zwiększenia przejrzystości tego podręcznika, za co jestem im bardzo wdzięczny. 
+Miałem szczęście pracować ze znakomitymi doktorantami, wiele się od nich nauczyłem.
+Chciałbym również podziękować prof. Joseph Slater z Wright State University za recenzję części nowych materiałów, opracowanie i utrzymanie powiązanego zestawu narzędzi (toolboxa) oraz za ciągłe przekazywanie sugestii.
+Wielu współpracowników z laboratoriów rządowych oraz przemysłu również przesyłało swoje uwagi, które okazały się bardzo cenne z punktu widzenia praktycznych zastosowań.
+Miałem również szczęście przez ostatnie 32 lata współpracować z licznymi firmami oraz agencjami federalnymi, które finansowały badania, projektowanie, testowanie i analizę szerokiej gamy konstrukcji oraz maszyn podlegających drganiom. 
+Bez tych projektów nie byłoby możliwe napisanie tej książki ani jej późniejsze aktualizacje z uwzględnieniem praktycznego podejścia do zagadnień drgań — podejścia, które, mam nadzieję, jest widoczne w całym tekście.
+Na koniec chciałbym podziękować mojej rodzinie za wsparcie moralne, poczucie celu oraz wyrozumiałość wobec mojej nieobecności podczas pracy nad książką.
+---
+
+
+1. Introduction to Vibration and the Free Response
+
+Vibration is the subdiscipline of dynamics that deals with repetitive motion. Most of the examples in this text are mechanical or structural elements.
+However, vibration is prevalent in biological systems and is in fact at the source of communication (the ear vibrates to hear and the tongue and vocal cords vibrate to speak). In the case of music, vibrations, say of a stringed instrument such as a guitar, are desired. 
+On the other hand, in most mechanical systems and structures, vibration is unwanted and even destructive. 
+For example, vibration in an aircraft frame causes fatigue and can eventually lead to failure. 
+An example of fatigue crack is illustrated in the circle in the photo on the bottom left. Everyday experiences are full of vibration and usually ways of mitigating vibration.
+Automobiles, trains, and even some bicycles have devices to reduce the vibration induced by motion and transmitted to the driver.
+
+1. Wprowadzenie do drgań oraz odpowiedź swobodna
+
+Drgania są poddziedziną dynamiki, która zajmuje się ruchem powtarzalnym. 
+Większość przykładów przedstawionych w tej książce dotyczy elementów mechanicznych lub konstrukcyjnych. 
+Jednak drgania występują również powszechnie w układach biologicznych i w istocie stanowią podstawę komunikacji (ucho drga, aby odbierać dźwięki, a język i struny głosowe drgają, aby umożliwić mówienie).
+W przypadku muzyki drgania, na przykład struny instrumentu takiego jak gitara, są zjawiskiem pożądanym. 
+Z drugiej strony, w większości układów mechanicznych i konstrukcji drgania są niepożądane, a nawet destrukcyjne. 
+Przykładowo, drgania w konstrukcji samolotu powodują zmęczenie materiału i mogą ostatecznie prowadzić do uszkodzenia. 
+Przykład pęknięcia zmęczeniowego przedstawiono w zaznaczonym obszarze na fotografii w lewym dolnym rogu.
+Codzienne doświadczenia obfitują w zjawiska drgań oraz w metody ich ograniczania. 
+Samochody, pociągi, a nawet niektóre rowery wyposażone są w urządzenia redukujące drgania wywołane ruchem i przenoszone na kierowcę lub użytkownika.
+---
+
+The task of this text is to teach the reader how to analyze vibration using principles of dynamics.
+This requires the use of mathematics. In fact, the sine function provides the fundamental means of analyzing vibration phenomena.
+The basic concepts of understanding vibration, analyzing vibration, and predicting the behavior of vibrating systems form the topics of this text. 
+The concepts and formulations presented in the following chapters are intended to provide the skills needed for designing vibrating systems with desired properties that enhance vibration when it is wanted and reduce vibration when it is not.
+This first chapter examines vibration in its simplest form in which no external force is present (free vibration). 
+This chapter introduces both the important concept of natural frequency and how to model vibration mathematically.
+The Internet is a great source for examples of vibration, and the reader is encouraged to search for movies of vibrating systems and other examples that can be found there.
+
+Celem tej książki jest nauczenie czytelnika analizy drgań przy użyciu zasad dynamiki. 
+Wymaga to zastosowania narzędzi matematycznych. 
+W rzeczywistości funkcja sinus stanowi podstawowe narzędzie analizy zjawisk drganiowych.
+Podstawowe zagadnienia związane ze zrozumieniem drgań, ich analizą oraz przewidywaniem zachowania układów drgających stanowią główną tematykę tej książki. 
+Koncepcje i sformułowania przedstawione w kolejnych rozdziałach mają na celu dostarczenie umiejętności niezbędnych do projektowania układów o określonych właściwościach dynamicznych wzmacniających drgania tam, gdzie są pożądane, oraz tłumiących je tam, gdzie są niepożądane.
+W niniejszym rozdziale omówiono drgania w ich najprostszej postaci, czyli w sytuacji braku działania sił zewnętrznych (drgania swobodne). 
+Wprowadzono również kluczowe pojęcie częstotliwości własnej oraz przedstawiono sposób matematycznego modelowania drgań.
+Internet stanowi doskonałe źródło przykładów zjawisk drganiowych i czytelnik jest zachęcany do wyszukiwania materiałów wideo przedstawiających drgające układy oraz innych dostępnych przykładów.
+---
+
+Vibration is the study of the repetitive motion of objects relative to a stationary frame of reference or nominal position (usually equilibrium). 
+Vibration is evident everywhere and in many cases greatly affects the nature of engineering designs. 
+The vibrational properties of engineering devices are often limiting factors in their performance.
+When harmful, vibration should be avoided, but it can also be extremely useful. 
+In either case, knowledge about vibration—how to analyze, measure, and control it is beneficial and forms the topic of this book.
+
+Typical examples of vibration familiar to most include the motion of a guitar string, the ride quality of an automobile or motorcycle, the motion of an airplane’s wings, and the swaying of a large building due to wind or an earthquake.
+In the chapters that follow, vibration is modeled mathematically based on fundamental principles, such as Newton’s laws, and analyzed using results from calculus and differential equations. 
+Techniques used to measure the vibration of a system are then developed. 
+In addition, information and methods are given that are useful for designing particular systems to have specific vibrational responses.
+- The physical explanation of the phenomena of vibration concerns the interplay between potential energy and kinetic energy. 
+- A vibrating system must have a component that stores potential energy and releases it as kinetic energy in the form of motion (vibration) of a mass. 
+- The motion of the mass then gives up kinetic energy to the potential-energy storing device.
+
+Drgania to dziedzina zajmująca się badaniem ruchu powtarzalnego obiektów względem nieruchomego układu odniesienia lub położenia nominalnego (zwykle położenia równowagi). 
+Drgania występują powszechnie i w wielu przypadkach w istotny sposób wpływają na projektowanie inżynierskie. 
+Właściwości drganiowe urządzeń często stanowią czynnik ograniczający ich osiągi. 
+Jeżeli drgania są szkodliwe, należy ich unikać, jednak mogą być również bardzo użyteczne. 
+W obu przypadkach wiedza na temat drgań — obejmująca ich analizę, pomiar i kontrolę — jest niezwykle cenna i stanowi przedmiot tej książki. 
+
+Typowe przykłady drgań, dobrze znane większości osób, obejmują ruch struny gitary, komfort jazdy samochodu lub motocykla, drgania skrzydeł samolotu oraz kołysanie się wysokiego budynku pod wpływem wiatru lub trzęsienia ziemi. 
+W kolejnych rozdziałach drgania są modelowane matematycznie na podstawie fundamentalnych zasad, takich jak prawa Newtona, oraz analizowane z wykorzystaniem narzędzi rachunku różniczkowego i równań różniczkowych. 
+Następnie przedstawione są techniki pomiaru drgań układów. 
+Ponadto zaprezentowano informacje i metody przydatne w projektowaniu układów o określonych właściwościach dynamicznych. 
+- Fizyczne wyjaśnienie zjawiska drgań dotyczy wzajemnego oddziaływania energii potencjalnej i energii kinetycznej.
+- Układ drgający musi posiadać element, który magazynuje energię potencjalną i uwalnia ją w postaci energii kinetycznej w postaci ruchu (drgań) masy.
+- Ruch masy przekazuje następnie energię kinetyczną do elementu magazynującego energię potencjalną.
+---
+
+Engineering is built on a foundation of previous knowledge and the subject of vibration is no exception. 
+In particular, the topic of vibration builds on previous courses in dynamics, system dynamics, strength of materials, differential equations, and some matrix analysis. 
+In most accredited engineering programs, these courses are prerequisites for a course in vibration. 
+Thus, the material that follows draws information and methods from these courses. 
+Vibration analysis is based on a coalescence of mathematics and physical observation. 
+For example, consider a simple pendulum. You may have seen one in a science museum, in a grandfather clock, or you might make a simple one with a string and a marble.
+As the pendulum swings back and forth, observe that its motion as a function of time can be described very nicely by the sine function from trigonometry. 
+Even more interesting, if you make a free-body diagram of the pendulum and apply Newtonian mechanics to get the equation of motion (summing moments in this case), the resulting equation of motion has the sine function as its solution.
+Further, the equation of motion predicts the time it takes for the pendulum to repeat its motion. 
+In this example, dynamics, observation, and mathematics all come into agreement to produce a predictive model of the motion of a pendulum, which is easily verified by experiment (physical observation).
+
+Inżynieria opiera się na dotychczasowej wiedzy, a zagadnienie drgań nie stanowi tu wyjątku. 
+W szczególności temat drgań opiera się na wiedzy zdobytej na wcześniejszych kursach z zakresu dynamiki, dynamiki układów, wytrzymałości materiałów, równań różniczkowych oraz niektórych zagadnień analizy macierzowej. 
+W większości akredytowanych programów inżynierskich kursy te są warunkiem wstępnym do udziału w kursie poświęconym drganiom. 
+Dlatego materiał, który następuje poniżej, czerpie informacje i metody z tych kursów. 
+Analiza drgań opiera się na połączeniu matematyki i obserwacji fizycznych. 
+Weźmy na przykład proste wahadło. Być może widzieliście je w muzeum nauki, w zegarze stojącym, albo sami zrobiliście proste wahadło ze sznurka i kulki.
+Gdy wahadło kołysze się w przód i w tył, można zauważyć, że jego ruch jako funkcja czasu może być bardzo dobrze opisany funkcją sinusoidalną z trygonometrii. 
+Co ciekawsze, jeśli sporządzimy schemat ciała swobodnego wahadła i zastosujemy mechanikę newtonowską w celu uzyskania równania ruchu (w tym przypadku sumując momenty), wynikowe równanie ruchu ma funkcję sinusoidalną jako swoje rozwiązanie.
+Co więcej, równanie ruchu przewiduje czas, jaki zajmuje wahadłu powtórzenie ruchu. 
+W tym przykładzie dynamika, obserwacja i matematyka zgadzają się, tworząc model przewidujący ruch wahadła, który można łatwo zweryfikować eksperymentalnie (poprzez obserwację fizyczną).
+---
+
+This pendulum example tells the story of this text. 
+We propose a series of steps to build on the modeling skills developed in your first courses in statics, dynamics, and strength of materials combined with system dynamics to find equations of motion of successively more complicated systems. 
+Then we will use the techniques of differential equations and numerical integration to solve these equations of motion to predict how various mechanical systems and structures vibrate. 
+The following example illustrates the importance of recalling the methods learned in the first course in dynamics.
+
+Ten przykład z wahadłem stanowi wprowadzenie do niniejszego tekstu. 
+Proponujemy serię kroków, które pozwolą rozwinąć umiejętności modelowania nabyte podczas pierwszych kursów z zakresu statyki, dynamiki i wytrzymałości materiałów w połączeniu z dynamiką systemów, aby znaleźć równania ruchu coraz bardziej skomplikowanych układów.
+Następnie wykorzystamy techniki równania różniczkowe i całkowanie numeryczne do rozwiązania tych równań ruchu w celu przewidzenia, w jaki sposób drgają różne układy mechaniczne i konstrukcje.
+Poniższy przykład ilustruje, jak ważne jest przypomnienie sobie metod poznanych podczas pierwszego kursu z dynamiki.
+---
+
+Solution Consider the schematic of a pendulum in Figure 1.1(a). 
+In this case, the mass of the rod will be ignored as well as any friction in the hinge. 
+Typically, one starts with a photograph or sketch of the part or structure of interest and is immediately faced with having to make assumptions. 
+This is the “art” or experience side of vibration analysis and modeling. 
+The general philosophy is to start with the simplest model possible (hence, here we ignore friction and the mass of the rod and assume the motion remains in a plane) and try to answer the relevant engineering questions. 
+If the simple model doesn’t agree with the experiment, then make it more complex by relaxing the assumptions until the model successfully predicts physical observation. 
+With the assumptions in mind, the next step is to create a free-body diagram of the system, as indicated in Figure 1.1(b), in order to identify all of the relevant forces. 
+With all the modeled forces identified, Newton’s second law and Euler’s second law are used to derive the equations of motion.
+In this example Euler’s second law takes the form of summing moments about point O. 
+This yields
+
+Rozwiązanie: Rozważmy schemat wahadła przedstawiony na rysunku 1.1(a). 
+W tym przypadku pominiemy masę pręta, a także wszelkie tarcie w przegubie. 
+Zazwyczaj zaczynamy od zdjęcia lub szkicu interesującej nas części lub konstrukcji i od razu stajemy przed koniecznością sformułowania pewnych założeń. 
+Jest to „sztuka” lub aspekt oparty na doświadczeniu w analizie drgań i modelowaniu. 
+Ogólna filozofia polega na rozpoczęciu od możliwie najprostszego modelu (stąd w tym przypadku pomijamy tarcie i masę pręta oraz zakładamy, że ruch pozostaje w płaszczyźnie) i próbie udzielenia odpowiedzi na istotne pytania inżynierskie. 
+Jeśli prosty model nie zgadza się z eksperymentem, należy go skomplikować, łagodząc założenia, aż model z powodzeniem przewidzi obserwacje fizyczne. 
+Mając na uwadze te założenia, następnym krokiem jest stworzenie diagramu ciała swobodnego układu, jak pokazano na rysunku 1.1(b), w celu zidentyfikowania wszystkich istotnych sił. 
+Po zidentyfikowaniu wszystkich modelowanych sił wykorzystuje się drugie prawo Newtona i drugie prawo Eulera do wyprowadzenia równań ruchu.
+W tym przykładzie drugie prawo Eulera przybiera postać sumowania momentów względem punktu O. 
+Daje to
+
+---
+
+where MO denotes moments about the point O, J = ml2 is the mass moment of inertia of the mass m about the point O, l is the length of the massless rod, and 𝛂 is the angular acceleration vector. 
+Since the problem is really in one dimension, the vector sum of moments equation becomes the single scalar equation
+

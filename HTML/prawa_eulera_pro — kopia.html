@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Prawa Eulera – PRO+</title>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+}
+.sidebar {
+    width: 300px;
+    background-color: #161b22;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+.sidebar h2 { color: #58a6ff; }
+.sidebar a {
+    display: block;
+    color: #c9d1d9;
+    text-decoration: none;
+    margin: 10px 0;
+}
+.sidebar a:hover { color: #58a6ff; }
+
+.content {
+    margin-left: 320px;
+    padding: 40px;
+    max-width: 1100px;
+}
+
+h1, h2, h3 { color: #58a6ff; }
+
+.box {
+    background-color: #161b22;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>📘 Spis treści</h2>
+<a href="#intro">Wprowadzenie</a>
+<a href="#euler1">1. Pierwsza zasada</a>
+<a href="#euler2">2. Druga zasada</a>
+<a href="#moments">Moment siły</a>
+<a href="#energy">Energia</a>
+<a href="#pendulum">Wahadło</a>
+<a href="#applications">Zastosowania</a>
+<a href="#tasks">Zadania</a>
+</div>
+
+<div class="content">
+
+<h1 id="intro">Prawa Eulera – pełne wyjaśnienie</h1>
+
+<p>
+Prawa Eulera opisują ruch obrotowy bryły sztywnej i są fundamentalne w mechanice.
+Stanowią dokładny odpowiednik II zasady Newtona dla ruchu postępowego.
+</p>
+
+<div class="box">
+💡 Kluczowa idea: rotacja = translacja w wersji „kątowej”
+</div>
+
+<h2 id="euler1">1. Pierwsza zasada Eulera (kinematyka)</h2>
+
+\[
+\omega = \frac{d\theta}{dt}
+\]
+
+<ul>
+<li>\(\omega\) – prędkość kątowa [rad/s]</li>
+<li>\(\theta\) – kąt obrotu [rad]</li>
+</ul>
+
+<p>
+Opisuje jak szybko zmienia się położenie kątowe.
+</p>
+
+<h2 id="euler2">2. Druga zasada Eulera (dynamika)</h2>
+
+\[
+\sum M_O = I_O \alpha
+\]
+
+<ul>
+<li>\(\sum M_O\) – suma momentów względem punktu O [Nm]</li>
+<li>\(I_O\) – moment bezwładności [kg·m²]</li>
+<li>\(\alpha\) – przyspieszenie kątowe [rad/s²]</li>
+</ul>
+
+<div class="box">
+📌 Interpretacja:
+Moment = „siła obrotowa”, moment bezwładności = „masa obrotowa”
+</div>
+
+<h2 id="moments">Moment siły</h2>
+
+\[
+M = r \cdot F
+\]
+
+<p>
+Moment zależy od:
+</p>
+<ul>
+<li>siły</li>
+<li>ramienia działania</li>
+</ul>
+
+<p>
+Im dalej od osi działa siła → tym większy moment.
+</p>
+
+<h2 id="energy">Interpretacja energetyczna</h2>
+
+\[
+E_k = \frac{1}{2} I \omega^2
+\]
+
+\[
+E_p = m g l (1 - \cos\theta)
+\]
+
+<p>
+Drgania to wymiana energii:
+kinetyczna ↔ potencjalna
+</p>
+
+<h2 id="pendulum">Przykład: wahadło</h2>
+
+Moment:
+\[
+M = -m g l \sin\theta
+\]
+
+Równanie ruchu:
+\[
+I \ddot{\theta} + m g l \sin\theta = 0
+\]
+
+Linearyzacja:
+\[
+I \ddot{\theta} + m g l \theta = 0
+\]
+
+Częstotliwość:
+\[
+\omega_n = \sqrt{\frac{g}{l}}
+\]
+
+<h2 id="applications">Zastosowania</h2>
+
+<ul>
+<li>lotnictwo – drgania skrzydeł (flutter)</li>
+<li>motoryzacja – NVH</li>
+<li>MES – macierze bezwładności</li>
+<li>robotyka – manipulatory</li>
+</ul>
+
+<h2 id="tasks">Zadania</h2>
+
+<div class="box">
+<b>Zadanie 1:</b><br>
+Wyznacz częstotliwość własną wahadła długości 2 m.
+</div>
+
+<div class="box">
+<b>Zadanie 2:</b><br>
+Oblicz moment bezwładności pręta:
+\[
+I = \frac{1}{3} m L^2
+\]
+</div>
+
+<div class="box">
+<b>Zadanie 3:</b><br>
+Wyprowadź równanie:
+\[
+I \ddot{\theta} + c \dot{\theta} + k \theta = 0
+\]
+</div>
+
+</div>
+</body>
+</html>
