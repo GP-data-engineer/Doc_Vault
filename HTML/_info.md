@@ -13,5 +13,7 @@ resource for...
 
 Last, I wish to thank my
 
+I wish to offer for your consideration
+
  { .green }```
 
