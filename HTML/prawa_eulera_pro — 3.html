@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Drgania i Prawa Eulera – PRO MAX</title>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+}
+.sidebar {
+    width: 300px;
+    background-color: #161b22;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+.sidebar h2 { color: #58a6ff; }
+.sidebar a {
+    display: block;
+    color: #c9d1d9;
+    text-decoration: none;
+    margin: 10px 0;
+}
+.sidebar a:hover { color: #58a6ff; }
+
+.content {
+    margin-left: 320px;
+    padding: 40px;
+    max-width: 1100px;
+}
+
+h1, h2, h3 { color: #58a6ff; }
+
+.box {
+    background-color: #161b22;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>📘 Spis treści</h2>
+<a href="#newton">Prawa Newtona</a>
+<a href="#euler">Prawa Eulera</a>
+<a href="#energy">Energia</a>
+<a href="#sdof">Układ SDOF</a>
+<a href="#tasks">Zadania</a>
+</div>
+
+<div class="content">
+
+<h1>Podstawy drgań – ujęcie inżynierskie</h1>
+
+<h2 id="newton">Prawa Newtona</h2>
+
+\[
+F = m a
+\]
+
+<ul>
+<li>F – siła [N]</li>
+<li>m – masa [kg]</li>
+<li>a – przyspieszenie [m/s²]</li>
+</ul>
+
+<div class="box">
+Fundament: wszystkie równania drgań wynikają z tego prawa
+</div>
+
+<h3>Zadania (Newton)</h3>
+
+<div class="box">
+1. Oblicz przyspieszenie dla F=10N, m=2kg<br>  
+2. Jak zmieni się a przy podwojeniu siły?<br>  
+3. Wyznacz siłę dla m=5kg i a=3 m/s²  <br>
+4. Opisz fizycznie znaczenie masy  <br>
+5. Oblicz ruch przy zmiennej sile  <br>
+6. Układ 2 mas – wyznacz siły  <br>
+7. Zastosuj do ruchu harmonicznego  <br>
+8. Wyprowadź równanie ruchu  <br>
+9. Rozważ ruch w 2D  <br>
+10. Analiza układu z oporem <br>
+</div>
+
+<h2 id="euler">Prawa Eulera</h2>
+
+\[
+\sum M = I \alpha
+\]
+
+<ul>
+<li>M – moment [Nm]</li>
+<li>I – moment bezwładności [kg·m²]</li>
+<li>α – przyspieszenie kątowe [rad/s²]</li>
+</ul>
+
+<h3>Zadania (Euler)</h3>
+
+<div class="box">
+1. Oblicz moment dla F=10N, r=0.5m  <br>
+2. Wyznacz I dla pręta  <br>
+3. Ruch obrotowy dysku  <br>
+4. Wahadło – równanie ruchu  <br>
+5. Analiza momentów  <br>
+6. Układ wielomasowy  <br>
+7. Model wirnika  <br>
+8. Analiza stabilności  <br>
+9. Nieliniowe równanie  <br>
+10. Transformacja do MES <br>
+</div>
+
+<h2 id="energy">Energia</h2>
+
+\[
+E = \frac{1}{2} m v^2 + \frac{1}{2} k x^2
+\]
+
+<ul>
+<li>k – sztywność [N/m]</li>
+<li>x – przemieszczenie [m]</li>
+</ul>
+
+<h3>Zadania (Energia)</h3>
+
+<div class="box">
+1. Oblicz energię kinetyczną  <br>
+2. Energia sprężyny  <br>
+3. Zachowanie energii  <br>
+4. Ruch harmoniczny  <br>
+5. Energia w czasie  <br>
+6. Straty energii  <br>
+7. Energia tłumienia  <br>
+8. Bilans energii  <br>
+9. System nieliniowy  <br>
+10. Energia w MES <br>
+</div>
+
+<h2 id="sdof">Układ SDOF</h2>
+
+\[
+m \ddot{x} + c \dot{x} + k x = 0
+\]
+
+<ul>
+<li>c – tłumienie [Ns/m]</li>
+</ul>
+
+<h3>Zadania (SDOF)</h3>
+
+<div class="box">
+1. Wyznacz ωₙ  <br>
+2. Oblicz odpowiedź  <br>
+3. Dodaj tłumienie  <br>
+4. Analiza krytyczna  <br>
+5. Rozwiązanie równania  <br>
+6. Odpowiedź impulsowa  <br>
+7. Analiza rezonansu  <br>
+8. Wymuszenie harmoniczne  <br>
+9. Model MES  <br>
+10. Identyfikacja parametrów <br>
+</div>
+
+<h2 id="tasks">Podsumowanie</h2>
+
+<div class="box">
+To jest fundament pod:
+- drgania (Inman)
+- MES
+- lotnictwo
+- automotive NVH
+</div>
+
+</div>
+</body>
+</html>
