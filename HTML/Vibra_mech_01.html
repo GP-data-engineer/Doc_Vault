@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Drgania, Euler, MES i Modal Analysis – MASTER</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #161b22;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar h2 {
+            color: #58a6ff;
+        }
+        .sidebar a {
+            display: block;
+            color: #c9d1d9;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .sidebar a:hover {
+            color: #58a6ff;
+        }
+        .content {
+            margin-left: 320px;
+            padding: 40px;
+            max-width: 1100px;
+        }
+        h1, h2, h3 {
+            color: #58a6ff;
+        }
+        .box {
+            background-color: #161b22;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        /* dodatki do animacji */
+        canvas {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        input {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #238636;
+            border: none;
+            padding: 8px 16px;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #2ea043;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <h2>📘 Spis treści</h2>
+    <a href="#intro">Wprowadzenie</a>
+    <a href="#euler">Prawa Eulera</a>
+    <a href="#pendulum">Wahadło</a>
+    <a href="#sdof">Układ SDOF</a>
+    <a href="#inman1">Inman 1.1.2</a>
+    <a href="#inman2">Inman 1.1.3</a>
+    <a href="#mes">MES</a>
+    <a href="#modal">Modal Analysis</a>
+    <a href="#tasks">Zadania</a>
+</div>
+
+<div class="content">
+    <h1 id="intro">Mechanika drgań – poziom inżynierski</h1>
+    <div class="box">
+        To jest pełne przejście: Newton → Euler → SDOF → rozwiązanie analityczne → MES → modal analysis
+    </div>
+    ---
+    <h2 id="euler">Prawa Eulera</h2>
+    
+
+\[ \sum M = I \alpha \]
+
+
+    <ul>
+        <li>\(M\) – moment [Nm]</li>
+        <li>\(I\) – moment bezwładności [kg·m²]</li>
+        <li>\(\alpha\) – przyspieszenie kątowe [rad/s²]</li>
+    </ul>
+    <div class="box">
+        🔍 ANALIZA:
+        - \(I ↑\) → układ bardziej „ciężki rotacyjnie” → wolniejsza reakcja
+        - \(M ↑\) → większe przyspieszenie 👉 wniosek: masa/bezładność stabilizuje układ
+    </div>
+    ---
+    <h2 id="pendulum">Wahadło</h2>
+    
+
+\[ I \ddot{\theta} + m g l \theta = 0 \]
+
+
+    
+
+\[ \omega_n = \sqrt{\frac{g}{l}} \]
+
+
+    <ul>
+        <li>\(g\) – 9.81 m/s²</li>
+        <li>\(l\) – długość [m]</li>
+    </ul>
+    <div class="box">
+        🔍 ANALIZA:
+        - \(l ↑\) → wolniejsze drgania
+        - \(l ↓\) → szybsze drgania 👉 kontrolujesz dynamikę geometrią
+    </div>
+
+    <!-- Animacja wahadła -->
+    <h3>🎬 Animacja wahadła</h3>
+    <canvas id="pendulumCanvas" width="500" height="300"></canvas>
+    <div class="box">
+        l (długość) [m]:
+        <input type="number" id="pend_l" value="1" step="0.1"><br><br>
+        θ₀ (początkowy kąt) [rad]:
+        <input type="number" id="pend_theta0" value="0.3" step="0.1"><br><br>
+        <button onclick="startPendulum()">Start</button>
+        <button onclick="stopPendulum()">Stop</button>
+    </div>
+    <div class="box">
+        🔍 INTERPRETACJA:<br><br>
+        - dłuższe wahadło → wolniejsze drgania<br>
+        - większy kąt → większa amplituda<br>
+        - model: małe kąty (sinθ ≈ θ)<br>
+    </div>
+
+    ---
+    <h2 id="sdof">Układ SDOF</h2>
+    
+
+\[ m \ddot{x} + k x = 0 \]
+
+
+    
+
+\[ \omega_n = \sqrt{\frac{k}{m}} \]
+
+
+    <ul>
+        <li>\(m\) – masa [kg]</li>
+        <li>\(k\) – sztywność [N/m]</li>
+    </ul>
+    <div class="box">
+        🔍 ANALIZA:
+        - \(k ↑\) → szybsze drgania
+        - \(m ↑\) → wolniejsze drgania 👉 kluczowy kompromis projektowy
+    </div>
+
+    <!-- Animacja SDOF -->
+    <h3>🎬 Animacja drgań SDOF</h3>
+    <canvas id="vibrationCanvas" width="600" height="250"></canvas>
+    <div class="box">
+        <b>Sterowanie:</b><br><br>
+        m (masa) [kg]:
+        <input type="number" id="mass" value="10" step="1"><br><br>
+        k (sztywność) [N/m]:
+        <input type="number" id="stiffness" value="1000" step="100"><br><br>
+        x₀ (amplituda początkowa) [m]:
+        <input type="number" id="amplitude" value="0.1" step="0.01"><br><br>
+        <button onclick="startSimulation()">Start</button>
+        <button onclick="stopSimulation()">Stop</button>
+    </div>
+    <div class="box">
+        🔍 INTERPRETACJA:<br><br>
+        - większe k → szybsze oscylacje<br>
+        - większe m → wolniejsze oscylacje<br>
+        - większe x₀ → większa amplituda<br><br>
+        👉 dokładnie to co wynika z:<br>
+        
+
+\[
+        \omega_n = \sqrt{\frac{k}{m}}
+        \]
+
+
+    </div>
+
+    <!-- SDOF tłumiony -->
+    <h3>SDOF tłumiony</h3>
+    
+
+\[
+    m\ddot{x} + c\dot{x} + kx = 0
+    \]
+
+
+    <canvas id="dampedCanvas" width="600" height="250"></canvas>
+    <div class="box">
+        m:
+        <input type="number" id="dm" value="10"><br><br>
+        k:
+        <input type="number" id="dk" value="1000"><br><br>
+        c (tłumienie):
+        <input type="number" id="dc" value="20"><br><br>
+        x₀:
+        <input type="number" id="dx0" value="0.1"><br><br>
+        <button onclick="startDamped()">Start</button>
+        <button onclick="stopDamped()">Stop</button>
+    </div>
+    <div class="box">
+        🔍 INTERPRETACJA:<br><br>
+        - większe c → szybszy zanik drgań<br>
+        - dla c > 2√km → brak oscylacji (aperiodyczne)<br>
+    </div>
+
+    ---
+    <h2 id="inman1">📊 Inman 1.1.2</h2>
+    
+
+\[ x(t)= \frac{\sqrt{\omega_n^2 x_0^2 + v_0^2}}{\omega_n} \sin\left(\omega_n t + \tan^{-1}\left(\frac{\omega_n x_0}{v_0}\right)\right) \]
+
+
+    <ul>
+        <li>\(x(t)\) – przemieszczenie [m]</li>
+        <li>\(x_0\) – przemieszczenie początkowe [m]</li>
+        <li>\(v_0\) – prędkość początkowa [m/s]</li>
+        <li>\(\omega_n\) – częstość własna [rad/s]</li>
+    </ul>
+    <div class="box">
+        🔍 CEL: Sprawdzamy czy rozwiązanie spełnia warunek:
+        
+
+\[ x(0)=x_0 \]
+
+
+        👉 czyli czy model odpowiada fizycznemu startowi układu
+    </div>
+    ---
+    <h3>Krok matematyczny</h3>
+    
+
+\[ x(0)= \frac{\sqrt{\omega_n^2 x_0^2 + v_0^2}}{\omega_n} \sin\left(\tan^{-1}\left(\frac{\omega_n x_0}{v_0}\right)\right) \]
+
+
+    ---
+    <div class="box">
+        🔍 KLUCZOWA IDEA: Zamiast liczyć bezpośrednio:
+        
+
+\[ \sin(\tan^{-1}(\cdot)) \]
+
+
+        robimy interpretację geometryczną:
+        
+
+\[ \tan(\phi)=\frac{\omega_n x_0}{v_0} \]
+
+
+    </div>
+    ---
+    <div class="box">
+        Tworzymy trójkąt:
+        - przeciwległa: \( \omega_n x_0 \)
+        - przyległa: \( v_0 \)
+        - przeciwprostokątna: \( \sqrt{\omega_n^2 x_0^2 + v_0^2} \)
+    </div>
+    ---
+    
+
+\[ \sin(\phi)= \frac{\omega_n x_0}{\sqrt{\omega_n^2 x_0^2 + v_0^2}} \]
+
+
+    ---
+    
+
+\[ x(0)=x_0 \]
+
+
+    <div class="box">
+        ✔ rozwiązanie poprawne ✔ spełnia warunki początkowe
+    </div>
+    ---
+    <div class="box">
+        🔍 GŁĘBOKA ANALIZA INŻYNIERSKA: Amplituda:
+        
+
+\[ A=\frac{\sqrt{\omega_n^2 x_0^2 + v_0^2}}{\omega_n} \]
+
+
+        👉 zależy od:
+        - energii sprężystości \(kx_0^2\)
+        - energii kinetycznej \(mv_0^2\)
+    </div>
+    ---
+    <div class="box">
+        🔍 CO SIĘ STANIE:
+        - \(v_0 ↑\) → amplituda rośnie
+        - \(x_0 ↑\) → amplituda rośnie
+        - \(k ↑\) → \( \omega_n ↑ \) → amplituda maleje dla tego samego \(v_0\)
+        - \(m ↑\) → \( \omega_n ↓ \) → amplituda rośnie 👉 energia decyduje o ruchu
+    </div>
+    ---
+    <div class="box">
+        🔍 FAZA:
+        
+
+\[ \phi=\tan^{-1}\left(\frac{\omega_n x_0}{v_0}\right) \]
+
+
+        👉 mówi gdzie zaczynamy na sinusoidzie:
+        - duże \(x_0\) → start od wychylenia
+        - duże \(v_0\) → start od ruchu
+    </div>
+    ---
+    <div class="box">
+        🚀 WNIOSEK:
+        To równanie zawiera:
+        - warunki początkowe
+        - energię układu
+        - dynamikę 👉 pełna informacja o ruchu
+    </div>
+    ---
+    <h2 id="inman2">🚗 Inman 1.1.3 – identyfikacja sztywności</h2>
+    <div class="box">
+        <b>Problem:</b><br>
+        Układ koło–opona–zawieszenie modelujemy jako SDOF.<br>
+        <br>
+        Dane:<br>
+        m = 30 kg (masa niesprężynowana)<br>
+        f = 10 Hz (częstotliwość drgań)<br>
+        <br>
+        Szukamy:<br>
+        k – sztywność [N/m]
+    </div>
+    ---
+    <h3>Model fizyczny</h3>
+    
+
+\[ m \ddot{x} + kx = 0 \]
+
+
+    
+
+\[ \omega_n = \sqrt{\frac{k}{m}} \]
+
+
+    
+
+\[ \omega_n = 2\pi f \]
+
+
+    <ul>
+        <li>\(m\) – masa [kg]</li>
+        <li>\(k\) – sztywność [N/m]</li>
+        <li>\(f\) – częstotliwość [Hz]</li>
+        <li>\(\omega_n\) – częstość kołowa [rad/s]</li>
+    </ul>
+    ---
+    <h3>Krok 1: przekształcenie wzoru</h3>
+    
+
+\[ k = m \omega_n^2 \]
+
+
+    ---
+    <h3>Krok 2: zamiana Hz → rad/s</h3>
+    
+
+\[ \omega_n = 2\pi f = 2\pi \cdot 10 = 62.83 \, \text{rad/s} \]
+
+
+    ---
+    <h3>Krok 3: obliczenie sztywności</h3>
+    
+
+\[ k = 30 \cdot (62.83)^2 \]
+
+
+    
+
+\[ k = 30 \cdot 3947.8 \]
+
+
+    
+
+\[ k \approx 1.184 \cdot 10^5 \, \text{N/m} \]
+
+
+    ---
+    <div class="box">
+        ✔ wynik końcowy:<br>
+        k ≈ 118 400 N/m
+    </div>
+    ---
+    <div class="box">
+        🔍 ANALIZA FIZYCZNA: Częstotliwość NIE jest przypadkowa.<br>
+        <br>
+        Zależy od:<br>
+        - sztywności (k)<br>
+        - masy (m)<br>
+        <br>
+        👉 to jest „odcisk palca” układu dynamicznego
+    </div>
+    ---
+    <div class="box">
+        🔍 CO SIĘ STANIE: m ↑ → ω ↓ → układ wolniejszy<br>
+        <br>
+        k ↑ → ω ↑ → układ sztywniejszy i szybszy<br>
+        <br>
+        f ↑ → k ↑ (kwadratowo!)<br>
+        <br>
+        👉 mała zmiana f = duża zmiana k
+    </div>
+    ---
+    <div class="box">
+        🔍 INTERPRETACJA INŻYNIERSKA: Ten przykład to IDENTYFIKACJA PARAMETRU.<br>
+        <br>
+        Nie liczysz k bezpośrednio — mierzysz f.<br>
+        <br>
+        👉 to jest dokładnie to co robisz w:
+        - testach NVH<br>
+        - analizie modalnej<br>
+        - identyfikacji MES<br>
+    </div>
+    ---
+    <div class="box">
+        🔍 POWIĄZANIE Z ENERGIĄ:
+        
+
+\[ E = \frac{1}{2}k x^2 \]
+
+
+        Większe k → więcej energii przy tym samym x<br>
+        <br>
+        👉 sztywniejszy układ magazynuje więcej energii sprężystej
+    </div>
+    ---
+    <div class="box">
+        🔍 POWIĄZANIE Z MES:
+        
+
+\[ (K - \omega^2 M)\phi = 0 \]
+
+
+        👉 tutaj robisz odwrotnie:<br>
+        znasz ω → szukasz K
+    </div>
+    ---
+    <h3>🔥 Zadania – poziom inżynierski</h3>
+    <div class="box">
+        <b>1.</b><br>
+        m = 50 kg<br>
+        f = 8 Hz<br>
+        Oblicz k<br>
+        <b>Rozwiązanie:</b><br>
+        ω = 2π·8 = 50.27 rad/s<br>
+        k = 50 · (50.27)^2 ≈ 126 350 N/m<br>
+        ---<br>
+        <b>2.</b><br>
+        Jak zmieni się k jeśli f wzrośnie 2x?<br>
+        <b>Rozwiązanie:</b><br>
+        k ~ f²<br>
+        → k wzrośnie 4x<br>
+        ---<br>
+        <b>3.</b><br>
+        Masz układ o k = 200 000 N/m<br>
+        m = 25 kg<br>
+        Znajdź f<br>
+        <b>Rozwiązanie:</b><br>
+        ω = √(k/m) = √(200000/25) = √8000 = 89.44 rad/s<br>
+        f = ω / (2π) = 14.23 Hz<br>
+        ---<br>
+        <b>4.</b><br>
+        Projekt: chcesz podnieść f o 20%<br>
+        Co zrobić z k?<br>
+        <b>Rozwiązanie:</b><br>
+        f ~ √k<br>
+        → k musi wzrosnąć o ~44%<br>
+        ---<br>
+        <b>5. (MES-level)</b><br>
+        Masz 2 DOF system.<br>
+        Jak zmiana jednej sprężyny wpływa na częstotliwości?<br>
+        <b>Odpowiedź:</b><br>
+        Zmienia się CAŁA macierz K.<br>
+        Zmieniają się wszystkie mody.<br>
+        👉 efekt globalny, nie lokalny
+    </div>
+    ---
+    <div class="box">
+        🚀 FINALNY WNIOSEK:
+        Ten przykład to fundament:
+        - identyfikacji układów
+        - testów modalnych
+        - strojenia zawieszeń 👉 w praktyce: NIE liczysz k 👉 mierzysz f i wnioskujesz o k
+    </div>
+    ---
+    <h2 id="mes">MES</h2>
+    
+
+\[ M \ddot{x} + K x = 0 \]
+
+
+    <ul>
+        <li>\(M\) – macierz masy [kg]</li>
+        <li>\(K\) – macierz sztywności [N/m]</li>
+    </ul>
+    <div class="box">
+        🔍 ANALIZA:
+        - każdy element wpływa na M i K
+        - zmiana jednego elementu zmienia cały układ 👉 układ globalny ≠ suma lokalnych intuicji
+    </div>
+    ---
+    <h2 id="modal">Modal Analysis</h2>
+    
+
+\[ (K - \omega^2 M)\phi = 0 \]
+
+
+    <div class="box">
+        🔍 ANALIZA:
+        - rozwiązujesz problem własny
+        - dostajesz mody i częstotliwości 👉 to jest serce MES
+    </div>
+    ---
+    <h2 id="tasks">Zadania (poziom rosnący)</h2>
+    <div class="box">
+        1. Oblicz \( \omega_n \) dla m=10kg, k=1000 N/m 2. Jak zmieni się \( \omega_n \) gdy m wzrośnie 2x? 3. Wyznacz k dla f=5 Hz, m=20 kg 4. Opisz fizycznie wpływ sztywności 5. Co stanie się przy rezonansie?
+    </div>
+    ---
+    <div class="box">
+        🚀 FINALNY WNIOSEK:
+        Projektowanie dynamiczne to balans:
+        - masa
+        - sztywność
+        - energia 👉 to one definiują ruch
+    </div>
+</div>
+
+<script>
+/* SDOF – Twój kod */
+const canvas = document.getElementById("vibrationCanvas");
+const ctx = canvas.getContext("2d");
+let animationId;
+let t = 0;
+
+function startSimulation() {
+    const m = parseFloat(document.getElementById("mass").value);
+    const k = parseFloat(document.getElementById("stiffness").value);
+    const A = parseFloat(document.getElementById("amplitude").value);
+    const omega = Math.sqrt(k / m);
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let x = A * Math.cos(omega * t);
+        let scale = 200;
+        let posX = canvas.width / 2 + x * scale;
+
+        // linia równowagi
+        ctx.strokeStyle = "#444";
+        ctx.beginPath();
+        ctx.moveTo(0, 125);
+        ctx.lineTo(canvas.width, 125);
+        ctx.stroke();
+
+        // sprężyna
+        ctx.beginPath();
+        ctx.moveTo(50, 125);
+        let coils = 10;
+        let length = posX - 50;
+        for (let i = 0; i < coils; i++) {
+            let dx = length / coils;
+            let x1 = 50 + i * dx;
+            let y1 = (i % 2 === 0) ? 110 : 140;
+            ctx.lineTo(x1, y1);
+        }
+        ctx.lineTo(posX, 125);
+        ctx.strokeStyle = "#58a6ff";
+        ctx.stroke();
+
+        // masa
+        ctx.fillStyle = "#c9d1d9";
+        ctx.fillRect(posX, 100, 40, 50);
+
+        // ściana
+        ctx.fillStyle = "#444";
+        ctx.fillRect(20, 80, 20, 90);
+
+        t += 0.02;
+        animationId = requestAnimationFrame(animate);
+    }
+
+    cancelAnimationFrame(animationId);
+    t = 0;
+    animate();
+}
+
+function stopSimulation() {
+    cancelAnimationFrame(animationId);
+}
+
+/* SDOF tłumiony */
+let dampId;
+let td = 0;
+
+function startDamped() {
+    const m = parseFloat(document.getElementById("dm").value);
+    const k = parseFloat(document.getElementById("dk").value);
+    const c = parseFloat(document.getElementById("dc").value);
+    const x0 = parseFloat(document.getElementById("dx0").value);
+
+    const ctx2 = document.getElementById("dampedCanvas").getContext("2d");
+    const wn = Math.sqrt(k / m);
+    const zeta = c / (2 * Math.sqrt(k * m));
+    const wd = wn * Math.sqrt(Math.max(0, 1 - zeta * zeta));
+
+    function animate() {
+        ctx2.clearRect(0, 0, 600, 250);
+        let x = x0 * Math.exp(-zeta * wn * td) * Math.cos(wd * td);
+        let posX = 300 + x * 200;
+
+        // linia równowagi
+        ctx2.strokeStyle = "#444";
+        ctx2.beginPath();
+        ctx2.moveTo(0, 125);
+        ctx2.lineTo(600, 125);
+        ctx2.stroke();
+
+        ctx2.fillStyle = "#c9d1d9";
+        ctx2.fillRect(posX, 100, 40, 50);
+
+        td += 0.02;
+        dampId = requestAnimationFrame(animate);
+    }
+
+    cancelAnimationFrame(dampId);
+    td = 0;
+    animate();
+}
+
+function stopDamped() {
+    cancelAnimationFrame(dampId);
+}
+
+/* Wahadło */
+let pendId;
+let tp = 0;
+
+function startPendulum() {
+    const L = parseFloat(document.getElementById("pend_l").value);
+    const theta0 = parseFloat(document.getElementById("pend_theta0").value);
+    const g = 9.81;
+    const wn = Math.sqrt(g / L);
+    const ctxp = document.getElementById("pendulumCanvas").getContext("2d");
+
+    function animate() {
+        ctxp.clearRect(0, 0, 500, 300);
+        let theta = theta0 * Math.cos(wn * tp);
+
+        let originX = 250;
+        let originY = 20;
+        let bobX = originX + L * 150 * Math.sin(theta);
+        let bobY = originY + L * 150 * Math.cos(theta);
+
+        ctxp.strokeStyle = "#58a6ff";
+        ctxp.beginPath();
+        ctxp.moveTo(originX, originY);
+        ctxp.lineTo(bobX, bobY);
+        ctxp.stroke();
+
+        ctxp.fillStyle = "#c9d1d9";
+        ctxp.beginPath();
+        ctxp.arc(bobX, bobY, 15, 0, 2 * Math.PI);
+        ctxp.fill();
+
+        tp += 0.02;
+        pendId = requestAnimationFrame(animate);
+    }
+
+    cancelAnimationFrame(pendId);
+    tp = 0;
+    animate();
+}
+
+function stopPendulum() {
+    cancelAnimationFrame(pendId);
+}
+</script>
+</body>
+</html>
