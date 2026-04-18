@@ -88,6 +88,191 @@
 </div>
 
 <div class="content">
+
+<h1 id="intro">Mechanika drgań – poziom inżynierski</h1>
+
+
+<div class="box">
+    To jest pełne przejście: Newton → Euler → SDOF → rozwiązanie analityczne → MES → modal analysis
+</div>
+
+--- --- treść do skasowania ---
+
+<h2 id="euler">Prawa Eulera</h2>
+
+
+
+\[ \sum M = I \alpha \]
+
+
+
+<ul>
+    <li>\(M\) – moment [Nm]</li>
+    <li>\(I\) – moment bezwładności [kg·m²]</li>
+    <li>\(\alpha\) – przyspieszenie kątowe [rad/s²]</li>
+</ul>
+
+<div class="box">
+    🔍 ANALIZA:
+    - \(I ↑\) → układ bardziej „ciężki rotacyjnie” → wolniejsza reakcja<br>
+    - \(M ↑\) → większe przyspieszenie<br><br>
+    👉 wniosek: masa/bezładność stabilizuje układ
+</div>
+
+--- treść dodana ---
+---
+--- treść dodana ---
+
+
+<h2 id="pendulum">Wahadło</h2>
+
+
+---
+<!-- ------ Inman 1.1.1  -->
+---
+
+<h3>📘 Przykład Inman 1.1.1 – Wyprowadzenie równania ruchu wahadła</h3>
+
+<div class="box">
+    Rozważamy klasyczne wahadło: masa \(m\) zawieszona na masywnym pręcie o długości \(l\).<br>
+    Pomijamy masę pręta oraz tarcie w przegubie — to najprostszy model używany w dynamice.
+</div>
+
+<div class="box">
+    🔍 **CEL ZADANIA:**  
+    Wyprowadzić równanie ruchu korzystając z drugiego prawa Eulera:
+    
+
+\[
+        \sum M_O = I \alpha
+    \]
+
+
+</div>
+
+<div class="box">
+    🔍 **OPIS SYMBOLI:**<br><br>
+    - \(m\) — masa wahadła [kg]<br>
+    - \(l\) — długość pręta [m]<br>
+    - \(g\) — przyspieszenie ziemskie [m/s²]<br>
+    - \(\theta(t)\) — kąt wychylenia od pionu [rad]<br>
+    - \(\dot{\theta}(t)\) — prędkość kątowa [rad/s]<br>
+    - \(\ddot{\theta}(t)\) — przyspieszenie kątowe [rad/s²]<br>
+    - \(I = ml^2\) — moment bezwładności względem punktu zawieszenia [kg·m²]<br>
+    - \(M_g = -mgl\sin\theta\) — moment siły ciężkości [Nm]
+</div>
+
+<div class="box">
+    🔍 **Krok 1: Moment bezwładności**
+    
+
+\[
+        I = ml^2
+    \]
+
+
+    Masa traktowana jako punktowa → moment liczony względem punktu O.
+</div>
+
+<div class="box">
+    🔍 **Krok 2: Moment siły ciężkości**
+    Ramię działania siły \(mg\) wynosi:
+    
+
+\[
+        l \sin\theta
+    \]
+
+
+    Zatem moment:
+    
+
+\[
+        M_g = -mgl \sin\theta
+    \]
+
+
+    (minus — moment działa przeciwnie do przyjętego zwrotu dodatniego kąta).
+</div>
+
+<div class="box">
+    🔍 **Krok 3: Równanie ruchu**
+    Podstawiamy do równania Eulera:
+    
+
+\[
+        ml^2 \ddot{\theta} = -mgl \sin\theta
+    \]
+
+
+    Dzielimy przez \(ml^2\):
+    
+
+\[
+        \ddot{\theta} + \frac{g}{l}\sin\theta = 0
+    \]
+
+
+</div>
+
+<div class="box">
+    🔍 **ANALIZA INŻYNIERSKA (nieliniowość):**<br><br>
+    - równanie zawiera \(\sin\theta\) → układ **nieliniowy**, trudniejszy do analizy<br>
+    - dla dużych kątów model jest dokładny<br>
+    - dla małych kątów można uprościć model<br><br>
+    👉 nieliniowość wynika z geometrii, nie z materiału ani tłumienia
+</div>
+
+<div class="box">
+    🔍 **Krok 4: Liniaryzacja (małe kąty)**  
+    Przy małych wychyleniach:
+    
+
+\[
+        \sin\theta \approx \theta
+    \]
+
+
+    Otrzymujemy liniowy model:
+    
+
+\[
+        \ddot{\theta} + \frac{g}{l}\theta = 0
+    \]
+
+
+</div>
+
+<div class="box">
+    🔍 **ANALIZA INŻYNIERSKA (model liniowy):**<br><br>
+    - model liniowy jest bardzo dokładny dla \(|\theta| < 10^\circ\)<br>
+    - okres drgań zależy tylko od \(l\) i \(g\), nie od masy<br>
+    - równanie ma postać identyczną jak SDOF<br><br>
+    👉 wahadło to „rotacyjny SDOF”
+</div>
+
+<div class="box">
+    🔍 **WNIOSKI:**<br><br>
+    - geometria (długość \(l\)) kontroluje dynamikę<br>
+    - masa nie wpływa na częstość drgań<br>
+    - nieliniowość pojawia się naturalnie z geometrii<br><br>
+    👉 wahadło to idealny przykład przejścia: **Euler → równanie ruchu → liniaryzacja**
+</div>
+
+<!-- dalej pozostaje Twoja animacja wahadła i reszta kodu -->
+
+--- treść dodana ---
+
+
+
+--- treść dodana ---
+
+<!-- dalej pozostaje Twój kod wahadła + animacja -->
+
+
+
+
+
     <h1 id="intro">Mechanika drgań – poziom inżynierski</h1>
     <div class="box">
         To jest pełne przejście: Newton → Euler → SDOF → rozwiązanie analityczne → MES → modal analysis
@@ -130,6 +315,9 @@
         - \(l ↑\) → wolniejsze drgania
         - \(l ↓\) → szybsze drgania 👉 kontrolujesz dynamikę geometrią
     </div>
+
+
+
 
     <!-- Animacja wahadła -->
     <h3>🎬 Animacja wahadła</h3>
@@ -228,8 +416,11 @@
         - dla c > 2√km → brak oscylacji (aperiodyczne)<br>
     </div>
 
-    ---
-    <h2 id="inman1">📊 Inman 1.1.2</h2>
+---
+<!-- ------ Inman 1.1.2  -->
+---
+
+    <h2 id="inman1">📊 Przykład Inman 1.1.2</h2>
     
 
 \[ x(t)= \frac{\sqrt{\omega_n^2 x_0^2 + v_0^2}}{\omega_n} \sin\left(\omega_n t + \tan^{-1}\left(\frac{\omega_n x_0}{v_0}\right)\right) \]
@@ -275,9 +466,11 @@
     ---
     <div class="box">
         Tworzymy trójkąt:
-        - przeciwległa: \( \omega_n x_0 \)
-        - przyległa: \( v_0 \)
-        - przeciwprostokątna: \( \sqrt{\omega_n^2 x_0^2 + v_0^2} \)
+    <ul>
+        <li>- przeciwległa: \( \omega_n x_0 \)</li>
+        <li>- przyległa: \( v_0 \)</li>
+        <li>- przeciwprostokątna: \( \sqrt{\omega_n^2 x_0^2 + v_0^2} \)</li>
+    </ul>
     </div>
     ---
     
@@ -303,16 +496,20 @@
 
 
         👉 zależy od:
-        - energii sprężystości \(kx_0^2\)
-        - energii kinetycznej \(mv_0^2\)
+    <ul>   
+        <li>- energii sprężystości \(kx_0^2\)</li>
+        <li>- energii kinetycznej \(mv_0^2\)</li>
+    </ul> 
     </div>
     ---
     <div class="box">
         🔍 CO SIĘ STANIE:
-        - \(v_0 ↑\) → amplituda rośnie
-        - \(x_0 ↑\) → amplituda rośnie
-        - \(k ↑\) → \( \omega_n ↑ \) → amplituda maleje dla tego samego \(v_0\)
-        - \(m ↑\) → \( \omega_n ↓ \) → amplituda rośnie 👉 energia decyduje o ruchu
+    <ul> 
+        <li>- \(v_0 ↑\) → amplituda rośnie</li>
+        <li>- \(x_0 ↑\) → amplituda rośnie</li>
+        <li>- \(k ↑\) → \( \omega_n ↑ \) → amplituda maleje dla tego samego \(v_0\)</li>
+        <li>- \(m ↑\) → \( \omega_n ↓ \) → amplituda rośnie 👉 energia decyduje o ruchu</li>
+    </ul>
     </div>
     ---
     <div class="box">
@@ -323,18 +520,26 @@
 
 
         👉 mówi gdzie zaczynamy na sinusoidzie:
-        - duże \(x_0\) → start od wychylenia
-        - duże \(v_0\) → start od ruchu
+    <ul>   
+        <li>- duże \(x_0\) → start od wychylenia</li>
+        <li>- duże \(v_0\) → start od ruchu</li>
+    </ul>
     </div>
     ---
     <div class="box">
         🚀 WNIOSEK:
         To równanie zawiera:
-        - warunki początkowe
-        - energię układu
-        - dynamikę 👉 pełna informacja o ruchu
+    <ul>   
+        <li>- warunki początkowe</li>
+        <li>- energię układu</li>
+        <li>- dynamikę 👉 pełna informacja o ruchu</li>
     </div>
-    ---
+
+---
+<!-- ------ Inman 1.1.3  -->
+---
+
+
     <h2 id="inman2">🚗 Inman 1.1.3 – identyfikacja sztywności</h2>
     <div class="box">
         <b>Problem:</b><br>
@@ -426,7 +631,15 @@
         <br>
         👉 mała zmiana f = duża zmiana k
     </div>
+
+
+
+
+
+    
     ---
+
+
     <div class="box">
         🔍 INTERPRETACJA INŻYNIERSKA: Ten przykład to IDENTYFIKACJA PARAMETRU.<br>
         <br>
@@ -504,9 +717,11 @@
     <div class="box">
         🚀 FINALNY WNIOSEK:
         Ten przykład to fundament:
-        - identyfikacji układów
-        - testów modalnych
-        - strojenia zawieszeń 👉 w praktyce: NIE liczysz k 👉 mierzysz f i wnioskujesz o k
+    <ul>
+        <li> identyfikacji układów</li>
+        <li> testów modalnych</li>
+        <li> strojenia zawieszeń 👉 w praktyce: NIE liczysz k 👉 mierzysz f i wnioskujesz o k</li>
+    </ul>  
     </div>
     ---
     <h2 id="mes">MES</h2>
@@ -533,8 +748,10 @@
 
     <div class="box">
         🔍 ANALIZA:
-        - rozwiązujesz problem własny
-        - dostajesz mody i częstotliwości 👉 to jest serce MES
+        <ul>
+         <li>\ rozwiązujesz problem własny</li>
+         <li>\ dostajesz mody i częstotliwości 👉 to jest serce MES</li>
+        </ul>
     </div>
     ---
     <h2 id="tasks">Zadania (poziom rosnący)</h2>
@@ -545,10 +762,188 @@
     <div class="box">
         🚀 FINALNY WNIOSEK:
         Projektowanie dynamiczne to balans:
-        - masa
-        - sztywność
-        - energia 👉 to one definiują ruch
+        <ul>
+        <li>\ masa</li>
+        <li>\ sztywność</li>
+        <li>\ energia 👉 to one definiują ruch</li>
+        </ul>
     </div>
+
+---
+<!-- ------ Inman 1.1.4  -->
+---
+
+<h2 id="inman4">📊 Inman 1.1.4 – Amplituda i faza odpowiedzi</h2>
+
+<div class="box">
+    <b>Problem:</b><br>
+    Układ SDOF o parametrach:<br><br>
+
+    <ul>
+        <li>masa: \( m = 2 \, \text{kg} \)</li>
+        <li>sztywność: \( k = 200 \, \text{N/m} \)</li>
+    </ul>
+
+    Obliczyć amplitudę i fazę odpowiedzi dla trzech zestawów warunków początkowych:<br><br>
+
+    <ul>
+        <li>a) \( x_0 = 2 \, \text{mm}, \quad v_0 = 1 \, \text{mm/s} \)</li>
+        <li>b) \( x_0 = -2 \, \text{mm}, \quad v_0 = 1 \, \text{mm/s} \)</li>
+        <li>c) \( x_0 = 2 \, \text{mm}, \quad v_0 = -1 \, \text{mm/s} \)</li>
+    </ul>
+</div>
+
+---
+
+<h3>Krok 1: częstość własna</h3>
+
+
+
+\[
+\omega_n = \sqrt{\frac{k}{m}} = \sqrt{\frac{200}{2}} = 10 \, \text{rad/s}
+\]
+
+
+
+<div class="box">
+    🔍 ANALIZA:<br><br>
+    <ul>
+        <li>częstość własna zależy tylko od \(k\) i \(m\)</li>
+        <li>warunki początkowe NIE wpływają na \(\omega_n\)</li>
+    </ul>
+    👉 wszystkie trzy przypadki mają tę samą częstość drgań
+</div>
+
+---
+
+<h3>Krok 2: amplituda</h3>
+
+Wzór ogólny:
+
+
+
+\[
+A = \frac{\sqrt{\omega_n^2 x_0^2 + v_0^2}}{\omega_n}
+\]
+
+
+
+Dla przypadku (a):
+
+
+
+\[
+A = \frac{\sqrt{10^2 \cdot (2)^2 + 1^2}}{10}
+= 2.0025 \, \text{mm}
+\]
+
+
+
+<div class="box">
+    🔍 ANALIZA:<br><br>
+    <ul>
+        <li>amplituda zależy od energii początkowej: \(x_0\) i \(v_0\)</li>
+        <li>w każdym przypadku wartości bezwzględne są takie same → amplituda identyczna</li>
+    </ul>
+    👉 różnice między odpowiedziami wynikają tylko z fazy
+</div>
+
+---
+
+<h3>Krok 3: faza</h3>
+
+Wzór:
+
+
+
+\[
+\phi = \tan^{-1}\left(\frac{\omega_n x_0}{v_0}\right)
+\]
+
+
+
+---
+
+<h3>Przypadek (a)</h3>
+
+
+
+\[
+\phi = \tan^{-1}\left(\frac{10 \cdot 2}{1}\right)
+= 1.521 \, \text{rad} \approx 87.15^\circ
+\]
+
+
+
+<div class="box">
+    🔍 INTERPRETACJA:<br>
+    <ul>
+        <li>\(x_0 > 0\)</li>
+        <li>\(v_0 > 0\)</li>
+    </ul>
+    👉 punkt startowy w I ćwiartce sinusoidy
+</div>
+
+---
+
+<h3>Przypadek (b)</h3>
+
+
+
+\[
+\phi = \tan^{-1}\left(\frac{10 \cdot (-2)}{1}\right)
+= -1.521 \, \text{rad} \approx -87.15^\circ
+\]
+
+
+
+<div class="box">
+    🔍 INTERPRETACJA:<br>
+    <ul>
+        <li>\(x_0 < 0\)</li>
+        <li>\(v_0 > 0\)</li>
+    </ul>
+    👉 punkt startowy w IV ćwiartce sinusoidy
+</div>
+
+---
+
+<h3>Przypadek (c)</h3>
+
+
+
+\[
+\phi = \tan^{-1}\left(\frac{10 \cdot 2}{-1}\right)
+= -1.521 + \pi
+= 1.621 \, \text{rad} \approx 92.85^\circ
+\]
+
+
+
+<div class="box">
+    🔍 INTERPRETACJA:<br>
+    <ul>
+        <li>\(x_0 > 0\)</li>
+        <li>\(v_0 < 0\)</li>
+    </ul>
+    👉 punkt startowy w II ćwiartce sinusoidy (konieczna korekta o \(\pi\))
+</div>
+
+---
+
+<div class="box">
+    🚀 WNIOSEK KOŃCOWY:<br><br>
+    <ul>
+        <li>amplituda jest taka sama w każdym przypadku (energia początkowa identyczna)</li>
+        <li>różnice dotyczą wyłącznie fazy</li>
+        <li>znak \(x_0\) i \(v_0\) decyduje o ćwiartce startowej</li>
+    </ul>
+    👉 przykład pokazuje, że **faza niesie informację o stanie początkowym**, a nie o energii układu
+</div>
+
+
+
+
 </div>
 
 <script>
